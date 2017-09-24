@@ -6,32 +6,30 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo logo">
-        <a class="logo__link" href="/">
-          <img class="logo__img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
-        </a>
-      </div>
+      <a class="page-header__logo" href="/">
+        <img class="page-header__logo-img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
+      </a>
       <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__inner">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="/">
                 <span class="site-list__text">Главная</span>
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="photo.html">
                 <span class="site-list__text">Фотографии</span>
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="form.html">
                 <span class="site-list__text">Конкурс</span>
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="htmlacademy.html">
                 <span class="site-list__text">Html Academy</span>
               </a>
             </li>
@@ -41,12 +39,12 @@
     </header>
     <main class="page-main">
       <section class="post-header">
-        <div class="post-header__wrap">
-            <h1 class="visibility-hidden post-header__title">Мобильное приложение Pink</h1>
+        <div class="post-header__inner">
+            <h1 class="visually-hidden post-header__title">Мобильное приложение Pink</h1>
         </div>
         <section class="post-header__download download">
-          <div class="download__wrap">
-            <h2 class="visibility-hidden download__title">Скачать приложение</h2>
+          <div class="download__inner">
+            <h2 class="visually-hidden download__title">Скачать приложение</h2>
             <a class="btn download__btn" href="#">Скачать приложение</a>
             <ul class="download__list download-list">
               <li class="download-list__item">
@@ -67,46 +65,46 @@
         </section>
       </section>
       <section class="offers">
-        <div class="offers__wrap">
+        <div class="offers__inner">
           <h2 class="visivility-hidden offers__title">Устали от серости мегаполиса?</h2>
           <p class="offers__text">Устали от серости мегаполиса?</p>
           <p class="offers__text">Нам есть, что вам предложить!</p>
         </div>
       </section>
       <section class="advantages">
-        <div class="advantages__wrap">
-          <h2 class="visibility-hidden advantages__title">Наше приложение</h2>
-          <div class="advantages__list advantages-list">
-            <div class="advantages-list__item">
-              <p class="advantages-list__title">
+        <div class="advantages__inner">
+          <h2 class="visually-hidden advantages__title">Наше приложение</h2>
+          <ul class="advantages__list advantages-list">
+            <li class="advantages-list__item">
+              <h3 class="advantages-list__title">
                 Поднимает настроение
-              </p>
+              </h3>
               <p class="advantages-list__text">
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
-            </div>
-            <div class="advantages-list__item">
-              <p class="advantages-list__title">
+            </li>
+            <li class="advantages-list__item">
+              <h3 class="advantages-list__title">
                 Меняет мир вокруг
-              </p>
+              </h3>
               <p class="advantages-list__text">
                 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
               </p>
-            </div>
-            <div class="advantages-list__item">
-              <p class="advantages-list__title">
+            </li>
+            <li class="advantages-list__item">
+              <h3 class="advantages-list__title">
                 Заводит новых друзей
-              </p>
+              </h3>
               <p class="advantages-list__text">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrap slider">
-          <h2 class="visibility-hidden reviews__title">Отзывы о приложении</h2>
+        <div class="reviews__inner slider">
+          <h2 class="visually-hidden reviews__title">Отзывы о приложении</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item">
               <cite class="reviews__author">Николай Петров</cite>
@@ -138,12 +136,12 @@
         </div>
       </section>
       <section class="prices">
-        <div class="prices__wrap slider">
-          <h2 class="visibility-hidden prices__title">Тарифы</h2>
-          <div class="prices__list slider__list">
-            <div class="prices__item slider__item">
+        <div class="prices__inner slider">
+          <h2 class="visually-hidden prices__title">Тарифы</h2>
+          <ul class="prices__list slider__list">
+            <li class="prices__item slider__item">
               <div class="prices__header prices__header--hit">
-                <p class="prices__title">Стандарт</p>
+                <h3 class="prices__title">Стандарт</h3>
                 <p class="prices__cost">3,99 <span class="prices__currency">USD</span></p>
               </div>
               <ul class="prices__features-list">
@@ -151,10 +149,10 @@
                 <li class="prices__feature prices__feature--active">Смайлики</li>
                 <li class="prices__feature">Комментарии</li>
               </ul>
-            </div>
-            <div class="prices__item slider__item">
+            </li>
+            <li class="prices__item slider__item">
               <div class="prices__header prices__header--hit">
-                <p class="prices__title">Стандарт</p>
+                <h3 class="prices__title">Стандарт</h3>
                 <p class="prices__cost">3,99 <span class="prices__currency">USD</span></p>
               </div>
               <ul class="prices__features-list">
@@ -162,10 +160,10 @@
                 <li class="prices__feature prices__feature--active">Смайлики</li>
                 <li class="prices__feature">Комментарии</li>
               </ul>
-            </div>
-            <div class="prices__item slider__item">
+            </li>
+            <li class="prices__item slider__item">
               <div class="prices__header prices__header--hit">
-                <p class="prices__title">Стандарт</p>
+                <h3 class="prices__title">Стандарт</h3>
                 <p class="prices__cost">3,99 <span class="prices__currency">USD</span></p>
               </div>
               <ul class="prices__features-list">
@@ -173,8 +171,8 @@
                 <li class="prices__feature prices__feature--active">Смайлики</li>
                 <li class="prices__feature">Комментарии</li>
               </ul>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="prices__toggles slider__toggles">
             <span class="slider__toggle">1</span>
             <span class="slider__toggle slider__toggle--active">2</span>
@@ -183,8 +181,8 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__wrap">
-          <h2 class="visibility-hidden contacts__title">Контакты</h2>
+        <div class="contacts__inner">
+          <h2 class="visually-hidden contacts__title">Контакты</h2>
           <p class="contacts__text">
             Остались вопросы? <br>
             Свяжитесь с нами!
@@ -206,19 +204,25 @@
       <div id="map" class="map"></div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrap">
-        <div class="page-footer__logo logo">
-          <a class="logo__link" href="/">
-            <img class="logo__img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
-          </a>
-        </div>
+      <div class="page-footer__inner">
+        <a class="page-footer__logo" href="/">
+          <img class="page-footer__logo-img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
+        </a>
         <div class="page-footer__social social">
-          <a class="social__item social__item--twitter" href="#">Twitter</a>
-          <a class="social__item social__item--facebook" href="#">Facebook</a>
-          <a class="social__item social__item--youtube" href="#">Youtube</a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Youtube</a>
+            </li>
+          </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a href="#">Разработано</a>
+          <a class="copyright__link" href="#">Разработано</a>
         </div>
       </div>
     </footer>
