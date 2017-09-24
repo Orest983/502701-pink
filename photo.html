@@ -7,31 +7,31 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo logo">
-        <a class="logo__link" href="/">
-          <img class="logo__img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
+        <a class="page-header__logo" href="/">
+          <img class="page-header__logo-img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
         </a>
       </div>
       <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__inner">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="/">
                 <span class="site-list__text">Главная</span>
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="photo.html">
                 <span class="site-list__text">Фотографии</span>
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="form.html">
                 <span class="site-list__text">Конкурс</span>
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="htmlacademy.html">
                 <span class="site-list__text">Html Academy</span>
               </a>
             </li>
@@ -41,19 +41,19 @@
     </header>
     <main class="page-main">
       <section class="post-header">
-        <div class="post-header__wrap">
-            <h1 class="visibility-hidden post-header__title">Фотографии пользователей</h1>
+        <div class="post-header__inner">
+            <h1 class="visually-hidden post-header__title">Фотографии пользователей</h1>
         </div>
       </section>
       <section class="offers">
-        <div class="offers__wrap">
+        <div class="offers__inner">
           <h2 class="visivility-hidden offers__title">Взгляните на фотографии, которые выкладывают пользователи!</h2>
           <p class="offers__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
           <p class="offers__text">Видите, как не хватает ваших?</p>
         </div>
       </section>
       <section class="photos">
-        <div class="photos__wrap">
+        <div class="photos__inner">
           <h2 class="visivility-hidden photos__title">Фотографии</h2>
           <div class="photos__item photos__item--panorama">
             <div class="photos__img-wrap">
@@ -151,17 +151,17 @@
         </div>
       </section>
       <section class="offers">
-        <div class="offers__wrap">
+        <div class="offers__inner">
           <h2 class="visivility-hidden offers__title">Затмите их всех!</h2>
           <p class="offers__text">Затмите их всех!</p>
           <p class="offers__text">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
       <section class="upload">
-        <div class="upload__wrap">
+        <div class="upload__inner">
           <h2 class="visivility-hidden upload__title">Загрузить фото</h2>
           <form class="upload__form" action="index.html" method="post" enctype="multipart/form-data">
-            <div class="upload__wrap">
+            <div class="upload__inner">
               <!-- <input class="upload__file" type="file" name="photo" value=""> -->
               <img class="upload__img" src="http://placehold.it/280X375" alt="">
             </div>
@@ -184,19 +184,25 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrap">
-        <div class="page-footer__logo logo">
-          <a class="logo__link" href="/">
-            <img class="logo__img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
-          </a>
-        </div>
+      <div class="page-footer__inner">
+        <a class="page-footer__logo" href="/">
+          <img class="page-footer__logo-img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
+        </a>
         <div class="page-footer__social social">
-          <a class="social__item social__item--twitter" href="#">Twitter</a>
-          <a class="social__item social__item--facebook" href="#">Facebook</a>
-          <a class="social__item social__item--youtube" href="#">Youtube</a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Youtube</a>
+            </li>
+          </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a href="#">Разработано</a>
+          <a class="copyright__link" href="#">Разработано</a>
         </div>
       </div>
     </footer>
