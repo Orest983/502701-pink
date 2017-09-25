@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="/">
+        <img class="page-header__logo-img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
+      </a>
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__inner">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="/">
+                <span class="site-list__text">Главная</span>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">
+                <span class="site-list__text">Фотографии</span>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                <span class="site-list__text">Конкурс</span>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="htmlacademy.html">
+                <span class="site-list__text">Html Academy</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="post-header">
+        <div class="post-header__inner">
+            <h1 class="visually-hidden post-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </section>
+      <section class="offers">
+        <div class="offers__inner">
+          <h2 class="visivility-hidden offers__title">Поделитесь своей историей</h2>
+          <p class="offers__text">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          </p>
+        </div>
+      </section>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__inner">
+          <div class="form__block">
+            <div class="form__group">
+              <label class="form__label label" for="surname">Фамилия:</label>
+              <input class="form__input input" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию *">
+            </div>
+            <div class="form__group">
+              <label class="form__label label" for="firstname">Имя:</label>
+              <input class="form__input input" id="firstname" type="text" name="firstname" value="" placeholder="Введите ваше имя *">
+            </div>
+            <div class="form__group">
+              <label class="form__label label" for="middlename">Отчество:</label>
+              <input class="form__input input" id="middlename" type="text" name="middlename" value="" placeholder="Ну и отчество тоже">
+            </div>
+          </div>
+          <div class="form__block form__block--gray">
+            <div class="form__header">
+              <p class="form__header-text">
+                Ваши безбашенные достижения в путешествии
+              </p>
+            </div>
+            <div class="form__group">
+              <input class="form__checkbox checkbox" id="achievement-1" type="checkbox" name="achievements[]" value="Сделал селфи с акулой">
+              <label class="form__label label" for="achievement-1">Сделал селфи с акулой</label>
+            </div>
+            <div class="form__group">
+              <input class="form__checkbox checkbox" id="achievement-2" type="checkbox" name="achievements[]" value="Обгорел на пляже">
+              <label class="form__label label" for="achievement-2">Обгорел на пляже</label>
+            </div>
+            <div class="form__group">
+              <input class="form__checkbox checkbox" id="achievement-3" type="checkbox" name="achievements[]" value="Видел Чака Норриса">
+              <label class="form__label label" for="achievement-3">Видел Чака Норриса</label>
+            </div>
+            <div class="form__group">
+              <input class="form__checkbox checkbox" id="achievement-4" type="checkbox" name="achievements[]" value="Накупил сувениров">
+              <label class="form__label label" for="achievement-4">Накупил сувениров</label>
+            </div>
+            <div class="form__group">
+              <input class="form__checkbox checkbox" id="achievement-6" type="checkbox" name="achievements[]" value="Удержал башню">
+              <label class="form__label label" for="achievement-6">Удержал башню</label>
+            </div>
+            <div class="form__group">
+              <input class="form__checkbox checkbox" id="achievement-7" type="checkbox" name="achievements[]" value="Разгромил отель">
+              <label class="form__label label" for="achievement-7">Разгромил отель</label>
+            </div>
+          </div>
+          <div class="form__block">
+            <div class="form__group">
+              <label class="form__label label" for="phone">Номер телефона:</label>
+              <input class="form__input input" id="phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста *">
+            </div>
+            <div class="form__group">
+              <label class="form__label label" for="email">Адрес почты:</label>
+              <input class="form__input input" id="email" type="text" name="email" value="" placeholder="Введите почту">
+            </div>
+          </div>
+          <div class="form__block form__block--gray">
+            <div class="form__header">
+              <p class="form__header-text">
+                С каким приложением путешествовали?
+              </p>
+            </div>
+            <div class="form__group">
+              <input class="radio form__radio" id="app-ios" type="radio" name="app" value="Pink для IOS">
+              <label class="form__label label" for="app-ios">Pink для IOS</label>
+            </div>
+            <div class="form__group">
+              <input class="radio form__radio" id="app-android" type="radio" name="app" value="Pink на Android">
+              <label class="form__label label" for="app-android">Pink на Android</label>
+            </div>
+            <div class="form__group">
+              <input class="radio form__radio" id="app-windows" type="radio" name="app" value="Windows Phone">
+              <label class="form__label label" for="app-windows">Windows Phone</label>
+            </div>
+          </div>
+          <div class="form__block">
+            <div class="form__header">
+              <p class="form__header-text">
+                Опишите свои эмоции
+              </p>
+            </div>
+            <div class="form__group">
+              <textarea class="form__textarea textarea" name="comment" rows="8" cols="80">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </div>
+          </div>
+          <div class="form__block">
+            <button class="form__btn btn" type="submit">Отправить</button>
+          </div>
+        </div>
+      </form>
+
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <a class="page-footer__logo" href="/">
+          <img class="page-footer__logo-img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="#">Разработано</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
