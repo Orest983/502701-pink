@@ -13,11 +13,9 @@
     margin-bottom: 30px;
   }
   &__list {
+    @include ul-reset();
     display: flex;
-    margin: 0;
     margin-bottom: 30px;
-    padding: 0px;
-    list-style: none;
   }
   &__item {
     margin-right: 35px;

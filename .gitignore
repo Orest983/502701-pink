@@ -7,6 +7,7 @@
 *.sublime*
 todo.html
 css/*.css
+img/layout/
 node_modules/
 npm-debug.*
 Thumbs.db

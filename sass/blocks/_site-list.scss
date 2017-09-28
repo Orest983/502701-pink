@@ -1,8 +1,6 @@
 .site-list {
+  @include ul-reset();
   display: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   text-align: center;
   &__item {
     background-color: $color-darkblue;
