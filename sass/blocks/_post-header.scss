@@ -1,0 +1,26 @@
+.post-header {
+  margin-top: -66px;
+  &__inner {
+    width: 280px;
+    min-height: 460px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: url("../img/iphone-hand-mobile@1x.png") 50% 175px no-repeat,
+      url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
+    background-size: 255px 287px, cover; // contain, cover не работает!
+    background-color: $color-lightblue;
+  }
+  &__inner--small {
+    min-height: 237px;
+    background: url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
+  }
+  &__title {
+    margin: 0;
+    padding-top: 100px;
+    font-family: "opensanslight", "arial", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: $color-white;
+  }
+}

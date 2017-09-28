@@ -1,0 +1,22 @@
+.page-header {
+  position: relative;
+  background-color: rgba(#1d2631, 0.7);
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    height: 66px;
+    margin: 0 auto;
+  }
+  &__logo {
+    display: block;
+    height: 22px;
+  }
+  &__logo-img {
+
+  }
+  &__nav {
+
+  }
+}

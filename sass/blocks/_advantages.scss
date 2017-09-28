@@ -1,0 +1,21 @@
+.advantages {
+  padding-top: 55px;
+  padding-bottom: 0px;
+  background-color: $color-lightgray;
+  &__inner {
+    width: 280px;
+    margin: 0 auto;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &:after {
+    display: block;
+    content: "";
+    height: 275px;
+    background: url("../img/iphone-screen-mobile@1x.png") 50% 0 no-repeat;
+    background-size: 157px auto;
+  }
+}

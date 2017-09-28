@@ -1,0 +1,47 @@
+.photos {
+  &__inner {
+    width: 280px;
+    margin: 0 auto;
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+  &__img-wrap {
+    height: 180px;
+  }
+  &__content-wrap {
+    padding: 25px 20px;
+    background-color: $color-lightgray;
+  }
+  &__author {
+    margin: 0;
+    font-family: "opensansbold", "arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-darkerblue;
+  }
+  &__date {
+    font-family: "opensanslight", "arial", sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $color-darkergray;
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-darkerblue;
+  }
+  &__like {
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-pink;
+  }
+}

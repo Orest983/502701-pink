@@ -1,0 +1,32 @@
+.upload {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: $color-lightgray;
+  &__inner {
+    width: 280px;
+    margin: 0 auto;
+  }
+  &__img {
+    display: block;
+    margin-bottom: 40px;
+  }
+  &__editor {
+    margin-bottom: 70px;
+  }
+  &__editor:after {
+    position:absolute;
+    left:0;
+    right:0;
+    padding-top: 30px;
+    display: block;
+    content: "1111";
+    border-bottom: 1px solid $color-darkgray;
+    font-size: 0px;
+  }
+  &__btn-post {
+    margin-bottom: 12px;
+  }
+  &__btn-reset {
+
+  }
+}

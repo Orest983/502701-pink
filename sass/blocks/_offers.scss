@@ -1,0 +1,21 @@
+.offers {
+  &__inner {
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+  &__text {
+    margin: 0px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "opensanslight", "arial", sans-serif;
+    font-size: 24px;
+    color: $color-darkblue;
+  }
+  &__text--small {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
