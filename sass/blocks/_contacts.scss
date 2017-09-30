@@ -1,6 +1,7 @@
 .contacts {
   padding-top: 50px;
   padding-bottom: 40px;
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -8,9 +9,7 @@
     width: 280px;
     margin: 0 auto;
   }
-  &__title {
 
-  }
   &__text {
     margin: 0;
     margin-bottom: 40px;
@@ -19,12 +18,15 @@
     font-size: 24px;
     color: $color-darkblue;
   }
+
   &__item {
     margin-bottom: 20px;
   }
+
   &__item:last-child {
     margin-bottom: 0;
   }
+
   &__item-title {
     margin: 0;
     text-align: center;
@@ -32,6 +34,7 @@
     font-size: 18px;
     color: $color-darkblue;
   }
+
   &__info {
     display: block;
     margin: 0;
@@ -41,10 +44,4 @@
     color: $color-pink;
     text-decoration: none;
   }
-}
-@media (min-width: $bp-tablet) {
-
-}
-@media (min-width: $bp-desktop) {
-
 }
