@@ -1,15 +1,14 @@
 .post-header {
   margin-top: -66px;
-
+  background: url("../img/iphone-hand-mobile@1x.png") 50% 175px no-repeat,
+    url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
+  // background-size: 255px 287px, cover; // contain, cover не работает!
+  background-color: $color-lightblue;
   &__inner {
     width: 280px;
     min-height: 460px;
     margin: 0 auto;
     padding: 0 20px;
-    background: url("../img/iphone-hand-mobile@1x.png") 50% 175px no-repeat,
-      url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
-    background-size: 255px 287px, cover; // contain, cover не работает!
-    background-color: $color-lightblue;
   }
 
   &__inner--small {
