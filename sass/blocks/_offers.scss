@@ -5,23 +5,19 @@
     padding-top: 45px;
     padding-bottom: 40px;
   }
+
   &__text {
-    margin: 0px;
+    margin: 0;
     margin-bottom: 40px;
     text-align: center;
     font-family: "opensanslight", "arial", sans-serif;
     font-size: 24px;
     color: $color-darkblue;
   }
+
   &__text--small {
     margin-bottom: 0;
     font-size: 14px;
     line-height: 30px;
   }
-}
-@media (min-width: $bp-tablet) {
-
-}
-@media (min-width: $bp-desktop) {
-
 }
