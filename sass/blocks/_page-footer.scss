@@ -1,6 +1,7 @@
 .page-footer {
   padding-top: 40px;
   padding-bottom: 40px;
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -8,6 +9,7 @@
     width: 280px;
     margin: 0 auto;
   }
+
   &__logo {
     display: block;
     height: 41px;
