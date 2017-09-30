@@ -5,7 +5,7 @@
   // background-size: 255px 287px, cover; // contain, cover не работает!
   background-color: $color-lightblue;
   &__inner {
-    width: 280px;
+    width: $inner-mobile;
     min-height: 460px;
     margin: 0 auto;
     padding: 0 20px;
