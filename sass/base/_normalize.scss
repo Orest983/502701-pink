@@ -11,8 +11,8 @@
 
 html {
   line-height: 1.15; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  // -ms-text-size-adjust: 100%; /* 2 */
+  // -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -88,7 +88,7 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -113,17 +113,17 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  // text-decoration: underline dotted; /* 2 */
 }
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 
-b,
-strong {
-  font-weight: inherit;
-}
+// b,
+// strong {
+//   font-weight: inherit;
+// }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
@@ -160,7 +160,7 @@ dfn {
 
 mark {
   background-color: #ffff00;
-  color: #00000;
+  color: #000000;
 }
 
 /**
