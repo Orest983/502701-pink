@@ -3,9 +3,7 @@
     @include ul-reset();
     display: flex;
   }
-  &__item {
 
-  }
   &__link {
     box-sizing: border-box;
     display: block;
@@ -17,19 +15,16 @@
     border: 3px solid $color-darkgray;
     font-size: 0;
   }
+
   &__link--twitter {
     background: url("../../img/icon-twitter.svg") 50% 50% no-repeat;
   }
+
   &__link--facebook {
     background: url("../../img/icon-facebook.svg") 50% 50% no-repeat;
   }
+
   &__link--youtube {
     background: url("../../img/icon-youtube.svg") 50% 50% no-repeat;
   }
-}
-@media (min-width: $bp-tablet) {
-
-}
-@media (min-width: $bp-desktop) {
-
 }
