@@ -2,6 +2,7 @@
   &__toggles {
     text-align: center;
   }
+
   &__toggle {
     box-sizing: border-box;
     width: 6px;
@@ -14,16 +15,11 @@
     text-indent: -50px;
     overflow: hidden;
   }
+
   &__toggle--active {
     width: 12px;
     height: 12px;
     border: 3px solid $color-darkblue;
     background: $color-white;
   }
-}
-@media (min-width: $bp-tablet) {
-
-}
-@media (min-width: $bp-desktop) {
-
 }
