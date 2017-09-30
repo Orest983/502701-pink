@@ -8,12 +8,13 @@
     width: 6px;
     height: 6px;
     padding: 0;
-    margin-right: 16px;
+    margin: 0 8px;
     border-radius: 50%;
     border: none;
     background-color: $color-darkergray;
     text-indent: -50px;
     overflow: hidden;
+    cursor: pointer;
   }
 
   &__toggle--active {
