@@ -1,19 +1,16 @@
 .reviews {
   padding-top: 50px;
   padding-bottom: 40px;
+
   &__inner {
     width: 280px;
     margin: 0 auto;
   }
-  &__title {
 
-  }
   &__list {
     margin-bottom: 40px;
   }
-  &__item {
 
-  }
   &__author {
     display: block;
     margin-bottom: 15px;
@@ -24,17 +21,9 @@
     line-height: 30px;
     color: $color-black;
   }
+
   &__text {
     margin: 0;
     text-align: center;
   }
-  &__toggles {
-
-  }
-}
-@media (min-width: $bp-tablet) {
-
-}
-@media (min-width: $bp-desktop) {
-
 }
