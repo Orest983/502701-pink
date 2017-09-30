@@ -14,7 +14,7 @@
     margin: 0;
     margin-bottom: 40px;
     text-align: center;
-    font-family: "opensanslight", "arial", sans-serif;
+    font-weight: 300;
     font-size: 24px;
     color: $color-darkblue;
   }
@@ -30,7 +30,7 @@
   &__item-title {
     margin: 0;
     text-align: center;
-    font-family: "opensansbold", "arial", sans-serif;
+    font-weight: 700;
     font-size: 18px;
     color: $color-darkblue;
   }
@@ -39,7 +39,7 @@
     display: block;
     margin: 0;
     text-align: center;
-    font-family: "opensanslight", "arial", sans-serif;
+    font-weight: 300;
     font-size: 24px;
     color: $color-pink;
     text-decoration: none;
