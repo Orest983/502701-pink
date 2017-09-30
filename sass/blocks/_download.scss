@@ -2,6 +2,7 @@
   padding-top: 28px;
   padding-bottom: 35px;
   background-color: $color-darkerblue;
+
   &__inner {
     display: flex;
     align-items: center;
@@ -9,20 +10,25 @@
     width: 280px;
     margin: 0 auto;
   }
+
   &__btn {
     margin-bottom: 30px;
   }
+
   &__list {
     @include ul-reset();
     display: flex;
     margin-bottom: 30px;
   }
+
   &__item {
     margin-right: 35px;
   }
+
   &__item:last-child {
     margin-right: 0;
   }
+
   &__link {
     display: block;
     width: 50px;
@@ -30,15 +36,19 @@
     font-size: 0;
     text-decoration: none;
   }
+
   &__link--apple {
     background: url("../../img/logo-apple.svg") 50% 50% no-repeat;
   }
+
   &__link--android {
     background: url("../../img/logo-android.svg") 50% 50% no-repeat;
   }
+
   &__link--windows {
     background: url("../../img/logo-microsoft.svg") 50% 50% no-repeat;
   }
+
   &__text {
     margin: 0;
     color: $color-white;
@@ -47,10 +57,4 @@
     line-height: 24px;
     text-align: center;
   }
-}
-@media (min-width: $bp-tablet) {
-
-}
-@media (min-width: $bp-desktop) {
-
 }
