@@ -1,25 +1,22 @@
 .advantages {
   padding-top: 55px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   background-color: $color-lightgray;
+
   &__inner {
     width: 280px;
     margin: 0 auto;
   }
+
   &__list {
     @include ul-reset();
   }
-  &:after {
+
+  &::after {
     display: block;
     content: "";
     height: 275px;
     background: url("../img/iphone-screen-mobile@1x.png") 50% 0 no-repeat;
     background-size: 157px auto;
   }
-}
-@media (min-width: $bp-tablet) {
-
-}
-@media (min-width: $bp-desktop) {
-
 }
