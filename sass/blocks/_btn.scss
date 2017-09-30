@@ -11,18 +11,14 @@
   font-size: 18px;
   line-height: 49px;
   background: transparent;
+
   &--pink {
     border: 3px solid $color-pink;
     color: $color-pink;
   }
+
   &--gray {
     border: 3px solid $color-darkergray;
     color: $color-darkergray;
   }
-}
-@media (min-width: $bp-tablet) {
-
-}
-@media (min-width: $bp-desktop) {
-
 }
