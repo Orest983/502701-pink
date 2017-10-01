@@ -58,3 +58,33 @@
     text-align: center;
   }
 }
+
+@media (min-width: $bp-tablet) {
+  .download {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: transparent;
+
+    &__title {
+      margin-bottom: 34px;
+      visibility: visible;
+      line-height: normal;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 300;
+      color: $color-white;
+    }
+
+    &__inner {
+      width: 300px;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .download {
+    &__title {
+      font-size: 50px;
+    }
+  }
+}

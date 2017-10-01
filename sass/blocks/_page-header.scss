@@ -1,12 +1,13 @@
 .page-header {
   position: relative;
+  z-index: 10;
   background-color: rgba(#1d2631, 0.7);
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 280px;
+    width: $inner-mobile;
     height: 66px;
     margin: 0 auto;
   }
@@ -14,5 +15,22 @@
   &__logo {
     display: block;
     height: 22px;
+  }
+}
+
+@media (min-width: $bp-tablet) {
+  .page-header {
+    &__inner {
+      width: $inner-tablet;
+      height: 110px;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .page-header {
+    &__inner {
+      width: $inner-desktop;
+    }
   }
 }
