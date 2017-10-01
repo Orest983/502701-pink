@@ -1,0 +1,90 @@
+.download {
+  padding-top: 28px;
+  padding-bottom: 35px;
+  background-color: $color-darkerblue;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: $inner-mobile;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    @include ul-reset();
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    margin-right: 35px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    display: block;
+    width: 50px;
+    height: 60px;
+    font-size: 0;
+    text-decoration: none;
+  }
+
+  &__link--apple {
+    background: url("../img/logo-apple.svg") 50% 50% no-repeat;
+  }
+
+  &__link--android {
+    background: url("../img/logo-android.svg") 50% 50% no-repeat;
+  }
+
+  &__link--windows {
+    background: url("../img/logo-microsoft.svg") 50% 50% no-repeat;
+  }
+
+  &__text {
+    margin: 0;
+    color: $color-white;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $bp-tablet) {
+  .download {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+
+    &__title {
+      margin-bottom: 34px;
+      visibility: visible;
+      line-height: normal;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 300;
+      color: $color-white;
+    }
+
+    &__inner {
+      width: 300px;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .download {
+    &__title {
+      font-size: 50px;
+    }
+  }
+}

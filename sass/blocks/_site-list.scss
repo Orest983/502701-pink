@@ -1,0 +1,21 @@
+.site-list {
+  @include ul-reset();
+  display: none;
+  text-align: center;
+
+  &__item {
+    background-color: $color-darkblue;
+    box-shadow: 0 -1px 0 $color-black,
+      inset 0 1px 0 rgba($color-white, 0.15);
+  }
+
+  &__link {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 65px;
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

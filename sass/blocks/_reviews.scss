@@ -1,0 +1,29 @@
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  &__inner {
+    width: $inner-mobile;
+    margin: 0 auto;
+  }
+
+  &__list {
+    margin-bottom: 40px;
+  }
+
+  &__author {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 30px;
+    color: $color-black;
+  }
+
+  &__text {
+    margin: 0;
+    text-align: center;
+  }
+}

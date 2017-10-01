@@ -2,71 +2,77 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="/">
-        <img class="page-header__logo-img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
-      </a>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__inner">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="/">
-                <span class="site-list__text">Главная</span>
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">
-                <span class="site-list__text">Фотографии</span>
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
-                <span class="site-list__text">Конкурс</span>
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="htmlacademy.html">
-                <span class="site-list__text">Html Academy</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__inner">
+        <a class="page-header__logo" href="/">
+          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+        </a>
+        <nav class="page-header__nav main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__inner">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link" href="/">
+                  <span class="site-list__text">Главная</span>
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">
+                  <span class="site-list__text">Фотографии</span>
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">
+                  <span class="site-list__text">Конкурс</span>
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="htmlacademy.html">
+                  <span class="site-list__text">Html Academy</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="post-header">
         <div class="post-header__inner">
+          <div class="post-header__background">
             <h1 class="visually-hidden post-header__title">Мобильное приложение Pink</h1>
-        </div>
-        <section class="post-header__download download">
-          <div class="download__inner">
-            <h2 class="visually-hidden download__title">Скачать приложение</h2>
-            <a class="btn download__btn" href="#">Скачать приложение</a>
-            <ul class="download__list download-list">
-              <li class="download-list__item">
-                <a class="download-list__link download-list__link--apple" href="#">Apple</a>
-              </li>
-              <li class="download-list__item">
-                <a class="download-list__link download-list__link--android" href="#">Android</a>
-              </li>
-              <li class="download-list__item">
-                <a class="download-list__link download-list__link--windows" href="#">Windows</a>
-              </li>
-            </ul>
-            <p class="download__text">
-              Доступно для iPhone, iPad, Android, <br>
-              Windows Phone, OS X, Windows 8
-            </p>
           </div>
-        </section>
+          <section class="post-header__download download">
+            <div class="download__inner">
+              <h2 class="visually-hidden download__title">Взгляните <br> на жизнь <br> иначе!</h2>
+              <a class="btn download__btn" href="#">Скачать приложение</a>
+              <ul class="download__list">
+                <li class="download__item">
+                  <a class="download__link download__link--apple" href="#">Apple</a>
+                </li>
+                <li class="download__item">
+                  <a class="download__link download__link--android" href="#">Android</a>
+                </li>
+                <li class="download__item">
+                  <a class="download__link download__link--windows" href="#">Windows</a>
+                </li>
+              </ul>
+              <p class="download__text">
+                Доступно для iPhone, iPad, Android, <br>
+                Windows Phone, OS X, Windows 8
+              </p>
+            </div>
+          </section>
+        </div>
       </section>
       <section class="offers">
         <div class="offers__inner">
-          <h2 class="visivility-hidden offers__title">Устали от серости мегаполиса?</h2>
+          <h2 class="visually-hidden offers__title">Устали от серости мегаполиса?</h2>
           <p class="offers__text">Устали от серости мегаполиса?</p>
           <p class="offers__text">Нам есть, что вам предложить!</p>
         </div>
@@ -141,7 +147,7 @@
           <ul class="prices__list slider__list">
             <li class="prices__item slider__item">
               <div class="prices__header prices__header--hit">
-                <h3 class="prices__title">Стандарт</h3>
+                <h3 class="prices__header-title">Стандарт</h3>
                 <p class="prices__cost">3,99 <span class="prices__currency">USD</span></p>
               </div>
               <ul class="prices__features-list">
@@ -152,7 +158,7 @@
             </li>
             <li class="prices__item slider__item">
               <div class="prices__header prices__header--hit">
-                <h3 class="prices__title">Стандарт</h3>
+                <h3 class="prices__header-title">Стандарт</h3>
                 <p class="prices__cost">3,99 <span class="prices__currency">USD</span></p>
               </div>
               <ul class="prices__features-list">
@@ -163,7 +169,7 @@
             </li>
             <li class="prices__item slider__item">
               <div class="prices__header prices__header--hit">
-                <h3 class="prices__title">Стандарт</h3>
+                <h3 class="prices__header-title">Стандарт</h3>
                 <p class="prices__cost">3,99 <span class="prices__currency">USD</span></p>
               </div>
               <ul class="prices__features-list">
@@ -206,7 +212,7 @@
     <footer class="page-footer">
       <div class="page-footer__inner">
         <a class="page-footer__logo" href="/">
-          <img class="page-footer__logo-img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
+          <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Pink">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

@@ -1,0 +1,34 @@
+.editor {
+  &__tools {
+    display: flex;
+    margin-bottom: 33px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__tool {
+    display: block;
+    margin-right: 35px;
+    width: 44px;
+    height: 50px;
+    font-size: 0;
+    border: none;
+    color: $color-pink;
+  }
+
+  &__tool:last-child {
+    margin-right: 0;
+  }
+
+  &__tool--crop {
+    background: url("../../img/icon-editor-crop.svg#active") 50% 50% no-repeat;
+  }
+
+  &__tool--fill {
+    background: url("../../img/icon-editor-fill.svg") 50% 50% no-repeat;
+  }
+
+  &__tool--contrast {
+    background: url("../../img/icon-editor-contrast.svg") 50% 50% no-repeat;
+  }
+}

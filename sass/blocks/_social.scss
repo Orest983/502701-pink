@@ -1,0 +1,30 @@
+.social {
+  &__list {
+    @include ul-reset();
+    display: flex;
+  }
+
+  &__link {
+    box-sizing: border-box;
+    display: block;
+    width: 51px;
+    height: 51px;
+    margin: 0 6px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    border: 3px solid $color-darkgray;
+    font-size: 0;
+  }
+
+  &__link--twitter {
+    background: url("../img/icon-twitter.svg") 50% 50% no-repeat;
+  }
+
+  &__link--facebook {
+    background: url("../img/icon-facebook.svg") 50% 50% no-repeat;
+  }
+
+  &__link--youtube {
+    background: url("../img/icon-youtube.svg") 50% 50% no-repeat;
+  }
+}

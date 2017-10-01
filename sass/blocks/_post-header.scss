@@ -1,0 +1,70 @@
+.post-header {
+  margin-top: -66px;
+  background: url("../img/iphone-hand-mobile@1x.png") 50% 175px no-repeat,
+    url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
+  // background-size: 255px 287px, cover; // contain, cover не работает!
+  background-color: $color-lightblue;
+
+  &__background {
+    order: 2;
+    min-height: 460px;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__inner--small {
+    min-height: 237px;
+    background: url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 100px;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    color: $color-white;
+  }
+}
+
+@media (min-width: $bp-tablet) {
+  .post-header {
+    margin-top: -110px;
+    min-height: 729px;
+
+    &__inner {
+      display: flex;
+      margin: 0 auto;
+      width: $bp-tablet;
+    }
+
+    &__background {
+      width: $inner-tablet;
+      height: 729px;
+    }
+
+    &__download {
+      order: 1;
+      margin-top: 200px;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .post-header {
+    min-height: 853px;
+
+    &__inner {
+      width: $inner-desktop;
+      height: 729px;
+    }
+
+    &__download {
+      margin-top: 212px;
+      margin-left: 10px;
+    }
+  }
+}

@@ -2,58 +2,62 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="/">
-        <img class="page-header__logo-img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
-      </a>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__inner">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="/">
-                <span class="site-list__text">Главная</span>
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">
-                <span class="site-list__text">Фотографии</span>
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
-                <span class="site-list__text">Конкурс</span>
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="htmlacademy.html">
-                <span class="site-list__text">Html Academy</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__inner">
+        <a class="page-header__logo" href="/">
+          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+        </a>
+        <nav class="page-header__nav main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__inner">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link" href="/">
+                  <span class="site-list__text">Главная</span>
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">
+                  <span class="site-list__text">Фотографии</span>
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">
+                  <span class="site-list__text">Конкурс</span>
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="htmlacademy.html">
+                  <span class="site-list__text">Html Academy</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="post-header">
-        <div class="post-header__inner">
-            <h1 class="visually-hidden post-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <div class="post-header__inner post-header__inner--small">
+          <h1 class="post-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </section>
       <section class="offers">
         <div class="offers__inner">
-          <h2 class="visivility-hidden offers__title">Поделитесь своей историей</h2>
-          <p class="offers__text">
+          <h2 class="visually-hidden offers__title">Поделитесь своей историей</h2>
+          <p class="offers__text offers__text--small">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </p>
         </div>
       </section>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__inner">
-          <div class="form__block">
+        <div class="form__block">
+          <div class="form__block-inner">
             <div class="form__group">
               <label class="form__label label" for="surname">Фамилия:</label>
               <input class="form__input input" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию *">
@@ -67,11 +71,13 @@
               <input class="form__input input" id="middlename" type="text" name="middlename" value="" placeholder="Ну и отчество тоже">
             </div>
           </div>
-          <div class="form__block form__block--gray">
+        </div>
+        <div class="form__block form__block--gray">
+          <div class="form__block-inner">
             <div class="form__header">
-              <p class="form__header-text">
-                Ваши безбашенные достижения в путешествии
-              </p>
+              <h3 class="form__header-title">
+                Ваши безбашенные <br> достижения в путешествии
+              </h3>
             </div>
             <div class="form__group">
               <input class="form__checkbox checkbox" id="achievement-1" type="checkbox" name="achievements[]" value="Сделал селфи с акулой">
@@ -98,7 +104,9 @@
               <label class="form__label label" for="achievement-7">Разгромил отель</label>
             </div>
           </div>
-          <div class="form__block">
+        </div>
+        <div class="form__block">
+          <div class="form__block-inner">
             <div class="form__group">
               <label class="form__label label" for="phone">Номер телефона:</label>
               <input class="form__input input" id="phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста *">
@@ -108,11 +116,13 @@
               <input class="form__input input" id="email" type="text" name="email" value="" placeholder="Введите почту">
             </div>
           </div>
-          <div class="form__block form__block--gray">
+        </div>
+        <div class="form__block form__block--gray">
+          <div class="form__block-inner">
             <div class="form__header">
-              <p class="form__header-text">
+              <h3 class="form__header-title">
                 С каким приложением путешествовали?
-              </p>
+              </h3>
             </div>
             <div class="form__group">
               <input class="radio form__radio" id="app-ios" type="radio" name="app" value="Pink для IOS">
@@ -127,27 +137,30 @@
               <label class="form__label label" for="app-windows">Windows Phone</label>
             </div>
           </div>
-          <div class="form__block">
+        </div>
+        <div class="form__block form__block--textarea">
+          <div class="form__block-inner">
             <div class="form__header">
-              <p class="form__header-text">
+              <h3 class="form__header-title">
                 Опишите свои эмоции
-              </p>
+              </h3>
             </div>
             <div class="form__group">
-              <textarea class="form__textarea textarea" name="comment" rows="8" cols="80">Можно прям в красках, не стесняясь в выражениях</textarea>
+              <textarea class="form__textarea textarea" name="comment" rows="8">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
           </div>
-          <div class="form__block">
-            <button class="form__btn btn" type="submit">Отправить</button>
+        </div>
+        <div class="form__block form__block--submit">
+          <div class="form__block-inner">
+            <button class="form__btn" type="submit">Отправить</button>
           </div>
         </div>
       </form>
-
     </main>
     <footer class="page-footer">
       <div class="page-footer__inner">
         <a class="page-footer__logo" href="/">
-          <img class="page-footer__logo-img" src="http://placehold.it/75X22" width="75" height="22" alt="Pink">
+          <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Pink">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
