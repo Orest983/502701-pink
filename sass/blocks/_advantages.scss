@@ -8,15 +8,43 @@
     margin: 0 auto;
   }
 
-  &__list {
-    @include ul-reset();
-  }
-
-  &::after {
+  &__inner::after {
     display: block;
     content: "";
     height: 275px;
     background: url("../img/iphone-screen-mobile@1x.png") 50% 0 no-repeat;
     background-size: 157px auto;
+  }
+
+  &__list {
+    @include ul-reset();
+  }
+}
+
+@media (min-width: $bp-tablet) {
+  .advantages {
+    &__inner {
+      position: relative;
+      width: $inner-tablet;
+    }
+
+    &__inner::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 150px;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .advantages {
+    &__inner {
+      width: $inner-desktop;
+    }
+
+    &__inner::after {
+      display: none;
+    }
   }
 }

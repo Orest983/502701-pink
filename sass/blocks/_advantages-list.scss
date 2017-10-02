@@ -15,6 +15,57 @@
 
   &__text {
     margin: 0;
+    font-size: 14px;
+    line-height: 24px;
     text-align: center;
+  }
+}
+
+@media (min-width: $bp-tablet) {
+  .advantages-list {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      margin-left: auto;
+      width: 310px;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__text {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .advantages-list {
+    flex-direction: row;
+
+    &__item {
+      position: relative;
+      width: 240px;
+    }
+
+    &__item::before {
+      display: block;
+      content: "";
+      // background-image: url("../img/") no-repeat;
+    }
+
+    &__title {
+      text-align: center;
+      line-height: 30px;
+      font-size: 30px;
+    }
+
+    &__text {
+      text-align: center;
+      line-height: 30px;
+      font-size: 18px;
+    }
   }
 }
