@@ -1,18 +1,27 @@
 .copyright {
   &__link {
+    display: flex;
+    height: 40px;
+    line-height: 40px;
     font-size: 14px;
     text-decoration: none;
     color: $color-darkblue;
   }
 
   &__link::after {
-    position: relative;
-    top: 13px;
-    display: inline-block;
     width: 27px;
-    height: 34px;
     margin-left: 15px;
     content: " ";
     background: url("../img/logo-htmlacademy.svg") 50% 50% no-repeat;
+  }
+}
+
+@media (min-width: $bp-tablet) {
+  .copyright {
+    &__link {
+      height: 51px;
+      line-height: 51px;
+      font-size: 18px;
+    }
   }
 }
