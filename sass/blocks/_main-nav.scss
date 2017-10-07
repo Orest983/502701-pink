@@ -22,8 +22,7 @@
   }
 
   &__toggle--closed::after,
-  &__toggle--closed::before
-  {
+  &__toggle--closed::before {
     position: absolute;
     top: 30px;
     left: 15px;

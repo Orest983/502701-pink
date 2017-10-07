@@ -78,7 +78,7 @@
   }
 }
 
-@media (min-width: $bp-desktop){
+@media (min-width: $bp-desktop) {
   .contacts {
     &__inner {
       width: $inner-desktop;
@@ -104,6 +104,5 @@
     &__item-title {
       margin-bottom: 32px;
     }
-
   }
 }
