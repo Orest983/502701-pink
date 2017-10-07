@@ -1,17 +1,73 @@
 .main-nav {
   &__toggle {
+    position: relative;
     width: 50px;
     height: 66px;
     font-size: 0;
     border: none;
-    background: url("../img/icon-menu-burger.svg") 50% 50% no-repeat;
+    background: none;
+    //background: url("../img/icon-menu-burger.svg") 50% 50% no-repeat;
+    cursor: pointer;
+  }
+
+  &__toggle::before {
+    position: absolute;
+    top: 21px;
+    left: 0;
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: $color-white;
+    box-shadow: 0 10px 0 0 $color-white, 0 20px 0 0 $color-white;
+  }
+
+  &__toggle--closed::after,
+  &__toggle--closed::before
+  {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    content: "";
+    width: 22px;
+    height: 3px;
+    background-color: $color-white;
+    box-shadow: none;
+  }
+
+  &__toggle--closed::after {
+    transform: rotate(-45deg);
+  }
+
+  &__toggle--closed::before {
+    transform: rotate(45deg);
   }
 
   &__inner {
     position: absolute;
-    top: 66px;
+    top: 67px;
     left: 0;
     z-index: 10;
     width: 100%;
+  }
+}
+
+@media (min-width: $bp-tablet) {
+  .main-nav {
+    &__inner {
+      top: 111px;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .main-nav {
+    &__inner {
+      position: initial;
+      width: 620px;
+    }
+
+    &__toggle {
+      display: none;
+    }
   }
 }

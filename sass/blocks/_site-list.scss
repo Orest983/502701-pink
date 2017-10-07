@@ -1,12 +1,22 @@
 .site-list {
   @include ul-reset();
-  display: none;
+  display: block;
   text-align: center;
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
 
   &__item {
     background-color: $color-darkblue;
-    box-shadow: 0 -1px 0 $color-black,
-      inset 0 1px 0 rgba($color-white, 0.15);
+    border-bottom: 1px solid $color-black;
+    border-top: 1px solid $color-lighterblue;
+    // box-shadow: 0 -1px 0 $color-black,
+    //   inset 0 1px 0 rgba($color-white, 0.15);
   }
 
   &__link {
@@ -17,5 +27,22 @@
     color: $color-white;
     text-decoration: none;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      background: transparent;
+      border: none;
+    }
+
+    &__link {
+      font-weight: normal;
+      text-transform: none;
+    }
   }
 }

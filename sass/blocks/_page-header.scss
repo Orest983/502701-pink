@@ -1,7 +1,15 @@
 .page-header {
   position: relative;
   z-index: 10;
-  background-color: rgba(#1d2631, 0.7);
+  background-color: $color-darkblue;
+
+  &--nav-closed {
+    background-color: rgba(#1d2631, 0.7);
+  }
+
+  &--nav-opened {
+    border-bottom: 1px solid $color-black;
+  }
 
   &__inner {
     display: flex;
