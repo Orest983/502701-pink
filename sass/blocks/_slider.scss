@@ -1,26 +1,63 @@
 .slider {
+  position: relative;
+
+  &__controls {
+    display: none;
+  }
+
   &__toggles {
     text-align: center;
   }
 
   &__toggle {
     box-sizing: border-box;
-    width: 6px;
-    height: 6px;
+    width: 12px;
+    height: 12px;
     padding: 0;
     margin: 0 8px;
     border-radius: 50%;
-    border: none;
+    border: 3px solid $color-white;
     background-color: $color-darkergray;
     text-indent: -50px;
     overflow: hidden;
     cursor: pointer;
   }
 
+  &__toggle--lightgrey {
+    border: 3px solid $color-lightgray;
+  }
+
   &__toggle--active {
-    width: 12px;
-    height: 12px;
     border: 3px solid $color-darkblue;
     background: $color-white;
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .slider {
+    &__toggle {
+      display: none;
+    }
+
+    &__controls {
+      display: block;
+    }
+
+    &__control {
+      position: absolute;
+      top: 15%;
+      width: 30px;
+      height: 41px;
+      border: none;
+      cursor: pointer;
+    }
+
+    &__control--prev {
+      left: 0;
+    }
+
+    &__control--next {
+      right: 0;
+    }
   }
 }

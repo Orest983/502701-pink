@@ -1,6 +1,6 @@
 .page-footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 37px;
+  padding-bottom: 37px;
 
   &__inner {
     display: flex;
@@ -14,5 +14,40 @@
     display: block;
     height: 41px;
     margin-bottom: 40px;
+  }
+
+  &__social {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $bp-tablet) {
+  .page-footer {
+    &__inner {
+      flex-direction: row;
+      justify-content: space-between;
+      width: $inner-tablet;
+    }
+
+    &__logo {
+      width: 150px;
+      margin-top: -15px;
+      margin-bottom: 0;
+    }
+
+    &__social {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .page-footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &__inner {
+      width: $inner-desktop;
+    }
   }
 }

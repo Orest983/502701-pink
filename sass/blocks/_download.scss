@@ -66,17 +66,29 @@
     background-color: transparent;
 
     &__title {
-      margin-bottom: 34px;
+      margin-bottom: 29px;
       visibility: visible;
-      line-height: normal;
+      line-height: 50px;
       text-align: center;
       font-size: 40px;
       font-weight: 300;
       color: $color-white;
     }
 
+    &__text {
+      font-size: 18px;
+    }
+
     &__inner {
       width: 300px;
+    }
+
+    &__list {
+      margin-bottom: 35px;
+    }
+
+    &__btn {
+      margin-bottom: 45px;
     }
   }
 }
@@ -84,7 +96,18 @@
 @media (min-width: $bp-desktop) {
   .download {
     &__title {
+      margin-bottom: 52px;
       font-size: 50px;
+      line-height: 61px;
+    }
+
+    &__list {
+      margin-bottom: 56px;
+    }
+
+    &__btn {
+      margin-bottom: 67px;
+      font-size: 21px;
     }
   }
 }
