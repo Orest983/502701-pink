@@ -1,6 +1,6 @@
 .prices {
   padding-top: 65px;
-  padding-bottom: 47px;
+  padding-bottom: 40px;
   background-color: $color-lightgray;
 
   &__inner {
@@ -49,18 +49,18 @@
   &__cost {
     margin: 0;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 300;
     color: $color-white;
     line-height: 30px;
   }
 
   &__currency {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 300;
     text-transform: uppercase;
     color: $color-white;
-    line-height: 30px;
+    line-height: 28px;
   }
 
   &__features-list {

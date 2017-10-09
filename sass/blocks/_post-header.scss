@@ -1,13 +1,13 @@
 .post-header {
   margin-top: -66px;
-  background: url("../img/iphone-hand-mobile@1x.png") 50% 175px no-repeat,
+  background: url("../img/iphone-hand-mobile@1x.png") 2% 175px no-repeat,
     url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
   // background-size: 255px 287px, cover; // contain, cover не работает!
   background-color: $color-lightblue;
 
   &__background {
     order: 2;
-    min-height: 460px;
+    min-height: 462px;
   }
 
   &__inner {

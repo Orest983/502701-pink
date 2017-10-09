@@ -1,6 +1,6 @@
 .contacts {
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 45px;
+  padding-bottom: 43px;
 
   &__inner {
     width: $inner-mobile;
@@ -15,7 +15,7 @@
 
   &__text {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     text-align: center;
     font-weight: 300;
     font-size: 24px;
@@ -23,7 +23,7 @@
   }
 
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
 
   &__item:last-child {
@@ -32,7 +32,7 @@
 
   &__item-title {
     margin: 0;
-    margin-bottom: 11px;
+    margin-bottom: 4px;
     text-align: center;
     font-weight: 700;
     font-size: 18px;
