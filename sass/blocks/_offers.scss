@@ -1,9 +1,9 @@
 .offers {
+  padding-top: 42px;
+  padding-bottom: 40px;
   &__inner {
     width: $inner-mobile;
     margin: 0 auto;
-    padding-top: 42px;
-    padding-bottom: 40px;
   }
 
   &__text {
@@ -24,8 +24,8 @@
 
 @media (min-width: $bp-tablet) {
   .offers {
+    padding-top: 50px;
     &__inner {
-      padding-top: 50px;
       width: $inner-tablet;
     }
 
@@ -39,12 +39,16 @@
 
 @media (min-width: $bp-desktop) {
   .offers {
+    padding-top: 67px;
+    padding-bottom: 87px;
     &__inner {
       width: $inner-desktop;
     }
 
     &__text {
+      margin-bottom: 4px;
       font-size: 50px;
+      line-height: 58px;
     }
   }
 }

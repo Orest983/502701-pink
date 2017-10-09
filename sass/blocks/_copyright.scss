@@ -25,3 +25,13 @@
     }
   }
 }
+
+@media (min-width: $bp-desktop) {
+  .copyright {
+    &__link {
+      height: 55px;
+      line-height: 55px;
+      font-size: 18px;
+    }
+  }
+}

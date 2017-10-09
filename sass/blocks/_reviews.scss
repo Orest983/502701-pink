@@ -85,8 +85,23 @@
 
 @media (min-width: $bp-desktop) {
   .reviews {
+    padding-top: 185px;
+    padding-bottom: 80px;
+
     &__inner {
       width: $inner-desktop;
+    }
+
+    &__text {
+      margin-bottom: 36px;
+    }
+
+    &__author-info {
+      font-size: 18px;
+    }
+
+    &__author {
+      font-size: 24px;
     }
   }
 }

@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
-    height: 98px;
+    min-height: 98px;
     border-left: 1px solid $color-darkgray;
     border-right: 1px solid $color-darkgray;
     background-color: $color-darkblue;
@@ -141,7 +141,7 @@
     }
 
     &__header {
-      height: 79px;
+      min-height: 79px;
     }
 
     &__header-title {
@@ -164,7 +164,7 @@
 
 @media (min-width: $bp-desktop) {
   .prices {
-    padding-top: 67px;
+    padding-top: 75px;
     padding-bottom: 95px;
 
     &__inner {
@@ -177,13 +177,13 @@
     }
 
     &__feature {
-      height: 59px;
+      min-height: 60px;
       padding-left: 23px;
       font-size: 18px;
     }
 
     &__header {
-      height: 98px;
+      min-height: 98px;
     }
 
     &__header-title {
@@ -191,6 +191,10 @@
     }
 
     &__cost {
+      font-size: 24px;
+    }
+
+    &__currency {
       font-size: 24px;
     }
   }

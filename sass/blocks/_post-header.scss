@@ -1,13 +1,13 @@
 .post-header {
   margin-top: -66px;
-  background: url("../img/iphone-hand-mobile@1x.png") 2% 175px no-repeat,
-    url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
+  background: url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
   // background-size: 255px 287px, cover; // contain, cover не работает!
   background-color: $color-lightblue;
 
   &__background {
     order: 2;
     min-height: 462px;
+    background: url("../img/iphone-hand-mobile@1x.png") 2% 175px no-repeat;
   }
 
   &__inner {
@@ -62,8 +62,7 @@
     }
 
     &__download {
-      margin-top: 212px;
-      margin-left: 10px;
+      margin-top: 217px;
     }
   }
 }

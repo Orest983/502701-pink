@@ -15,11 +15,14 @@
 
   &__text {
     margin: 0;
-    margin-bottom: 38px;
     text-align: center;
     font-weight: 300;
     font-size: 24px;
     color: $color-darkblue;
+  }
+
+  &__text--last {
+    margin-bottom: 37px;
   }
 
   &__item {
@@ -86,15 +89,19 @@
     }
 
     &__text {
-      margin-bottom: 45px;
       font-size: 40px;
       line-height: 48px;
+    }
+
+    &__text--last {
+      margin-bottom: 45px;
     }
   }
 }
 
 @media (min-width: $bp-desktop) {
   .contacts {
+    padding-top: 71px;
     &__inner {
       width: $inner-desktop;
     }
@@ -104,8 +111,12 @@
     }
 
     &__text {
-      margin-bottom: 68px;
+      margin-bottom: 12px;
       font-size: 50px;
+    }
+
+    &__text--last {
+      margin-bottom: 64px;
     }
 
     &__item:nth-child(2) {
@@ -117,7 +128,7 @@
     }
 
     &__item-title {
-      margin-bottom: 32px;
+      margin-bottom: 25px;
     }
   }
 }

@@ -11,3 +11,10 @@
     height: 374px;
   }
 }
+
+@media (min-width: $bp-tablet) {
+  .map {
+    width: $bp-desktop;
+    height: 477px;
+  }
+}
