@@ -52,6 +52,7 @@
 
 @media (min-width: $bp-tablet) {
   .contacts {
+    padding-bottom: 27px;
     &__inner {
       width: $inner-tablet;
     }
@@ -64,7 +65,19 @@
 
     &__item {
       width: 300px;
-      margin-bottom: 55px;
+      margin-bottom: 50px;
+    }
+
+    &__item br {
+      display: initial;
+    }
+
+    &__item-title {
+      margin-bottom: 7px;
+    }
+
+    &__info {
+      line-height: 29px;
     }
 
     &__item:nth-child(3) {
@@ -73,7 +86,9 @@
     }
 
     &__text {
+      margin-bottom: 45px;
       font-size: 40px;
+      line-height: 48px;
     }
   }
 }

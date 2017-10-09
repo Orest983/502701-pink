@@ -1,6 +1,13 @@
 .map {
-  width: 320px;
+  width: $bp-mobile;
   height: 200px;
   margin: 0 auto;
-  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  background: url("../img/bg-map-mobile@1x.png") 50% 0 no-repeat;
+}
+
+@media (min-width: $bp-tablet) {
+  .map {
+    width: $bp-tablet;
+    height: 374px;
+  }
 }

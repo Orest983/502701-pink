@@ -26,11 +26,13 @@
     }
 
     &__description {
+      margin-top: 10px;
       width: 310px;
     }
 
     &__title {
       margin: 0;
+      margin-bottom: 10px;
       width: 170px;
       font-size: 30px;
       line-height: 36px;
@@ -38,6 +40,8 @@
     }
 
     &__text {
+      margin: 0;
+      margin-bottom: 10px;
       font-size: 14px;
       line-height: 24px;
       color: $color-darkerblue;

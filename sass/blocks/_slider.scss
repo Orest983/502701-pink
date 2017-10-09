@@ -33,6 +33,14 @@
   }
 }
 
+@media (min-width: $bp-tablet) {
+  .slider {
+    &__toggle {
+      margin: 0 4px;
+    }
+  }
+}
+
 @media (min-width: $bp-desktop) {
   .slider {
     &__toggle {

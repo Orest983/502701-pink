@@ -37,7 +37,7 @@
     &__inner {
       display: flex;
       margin: 0 auto;
-      width: $bp-tablet;
+      width: $inner-tablet;
     }
 
     &__background {
@@ -48,7 +48,6 @@
     &__download {
       order: 1;
       margin-top: 200px;
-      margin-left: 20px;
     }
   }
 }

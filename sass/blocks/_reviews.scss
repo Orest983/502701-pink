@@ -45,8 +45,13 @@
 
 @media (min-width: $bp-tablet) {
   .reviews {
+    padding-top: 37px;
     &__inner {
       width: $inner-tablet;
+    }
+
+    &__list {
+      margin-bottom: 26px;
     }
 
     &__item {
@@ -55,7 +60,7 @@
     }
 
     &__author {
-      margin-bottom: 5px;
+      margin-bottom: 2px;
       font-size: 20px;
     }
 
@@ -71,7 +76,7 @@
 
     &__text {
       order: -1;
-      margin-bottom: 44px;
+      margin-bottom: 34px;
       font-size: 18px;
       line-height: 30px;
     }
