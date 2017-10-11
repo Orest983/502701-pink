@@ -7,6 +7,16 @@
     padding-bottom: 34px;
   }
 
+  &--page-photo {
+    padding-top: 46px;
+    padding-bottom: 48px;
+  }
+
+  &--page-photo-bottom {
+    padding-top: 45px;
+    padding-bottom: 42px;
+  }
+
   &__inner {
     width: $inner-mobile;
     margin: 0 auto;
@@ -27,9 +37,9 @@
     line-height: 30px;
   }
 
-  &__text--small:last-child {
-    display: none;
-  }
+  // &__text--small:last-child {
+  //   display: none;
+  // }
 }
 
 @media (min-width: $bp-tablet) {

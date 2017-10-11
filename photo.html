@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--nav-opened">
       <div class="page-header__inner">
         <a class="page-header__logo" href="/">
           <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
@@ -15,7 +15,7 @@
         <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__inner">
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list site-list site-list--opened">
               <li class="site-list__item site-list__item--active">
                 <a class="site-list__link" href="/">
                   <span class="site-list__text">Главная</span>
@@ -33,7 +33,7 @@
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="htmlacademy.html">
-                  <span class="site-list__text">Html Academy</span>
+                  <span class="site-list__text">HTML Academy</span>
                 </a>
               </li>
             </ul>
@@ -42,131 +42,132 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="post-header">
+      <section class="post-header post-header--small">
         <div class="post-header__inner post-header__inner--small">
-            <h1 class="post-header__title">Фотографии пользователей</h1>
+          <h1 class="post-header__title">Фотографии пользователей</h1>
         </div>
       </section>
-      <section class="offers">
+      <section class="offers offers--page-photo">
         <div class="offers__inner">
           <h2 class="visually-hidden offers__title">Взгляните на фотографии, которые выкладывают пользователи!</h2>
-          <p class="offers__text offers__text--small">Взгляните на фотографии, которые выкладывают пользователи!</p>
-          <p class="offers__text offers__text--small">Видите, как не хватает ваших?</p>
+          <p class="offers__text offers__text--small">
+            Взгляните на фотографии, которые выкладывают пользователи!<br>
+            Видите, как не хватает ваших?
+          </p>
         </div>
       </section>
       <section class="photos">
-        <div class="photos__inner">
-          <h2 class="visually-hidden photos__title">Фотографии</h2>
-          <div class="photos__item photos__item--panorama">
-            <div class="photos__img-wrap">
-              <img class="photos__img" src="img/panorama-mobile@1x.jpg" width="280" height="180" alt="">
-            </div>
-            <div class="photos__content-wrap">
-              <p class="photos__author">
-                Анна
-                <span class="photos__date">(5 минут назад)</span>
-              </p>
-              <p class="photos__text">
-                Прыгать или нет?
-                Напишите в коментарии свой совет и смотрите прямую
-                трансляцию в перископе, задавайте свои вопросы!
-              </p>
-              <a class="photos__like" href="#">Нравится:215</a>
-            </div>
+        <h2 class="visually-hidden photos__title">Фотографии</h2>
+        <div class="photos__item photos__item--panorama">
+          <div class="photos__img-wrap photos__img-wrap--panorama">
+            <img class="photos__img" src="img/panorama-mobile@1x.jpg" alt="">
           </div>
-          <div class="photos__item">
-            <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
-            </div>
-            <div class="photos__content-wrap">
-              <p class="photos__author">
-                Левон
-                <span class="photos__date">(5 часов назад)</span>
-              </p>
-              <p class="photos__text">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-              <a class="photos__like" href="#">Нравится:356</a>
-            </div>
+          <div class="photos__content-wrap photos__content-wrap--panorama">
+            <span class="photos__label">Панорама дня</span>
+            <p class="photos__author">
+              Анна
+              <span class="photos__date">(5 минут назад)</span>
+            </p>
+            <p class="photos__text">
+              Прыгать или нет?
+              Напишите в коментарии свой совет и смотрите прямую
+              трансляцию в перископе, задавайте свои вопросы!
+            </p>
+            <a class="photos__like" href="#">Нравится:215</a>
           </div>
-          <div class="photos__item">
-            <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
-            </div>
-            <div class="photos__content-wrap">
-              <p class="photos__author">
-                Антон
-                <span class="photos__date">(12 часов назад)</span>
-              </p>
-              <p class="photos__text">
-                Соседи будут рады!
-              </p>
-              <a class="photos__like" href="#">Нравится:666</a>
-            </div>
+        </div>
+        <div class="photos__item">
+          <div class="photos__img-wrap">
+            <img class="photos__img" src="img/photo-car-mobile@1x.jpg" alt="">
           </div>
-          <div class="photos__item">
-            <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
-            </div>
-            <div class="photos__content-wrap">
-              <p class="photos__author">
-                Борис
-                <span class="photos__date">(20 часов назад)</span>
-              </p>
-              <p class="photos__text">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-              <a class="photos__like" href="#">Нравится:215</a>
-            </div>
+          <div class="photos__content-wrap">
+            <p class="photos__author">
+              Левон
+              <span class="photos__date">(5 часов назад)</span>
+            </p>
+            <p class="photos__text">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <a class="photos__like" href="#">Нравится:356</a>
           </div>
-          <div class="photos__item">
-            <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
-            </div>
-            <div class="photos__content-wrap">
-              <p class="photos__author">
-                Сергей
-                <span class="photos__date">(25 часов назад)</span>
-              </p>
-              <p class="photos__text">
-                Самая кубанская в мире!
-              </p>
-              <a class="photos__like" href="#">Нравится:4</a>
-            </div>
+        </div>
+        <div class="photos__item">
+          <div class="photos__img-wrap">
+            <img class="photos__img" src="img/photo-drumset-mobile@1x.jpg" alt="">
           </div>
-          <div class="photos__item">
-            <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
-            </div>
-            <div class="photos__content-wrap">
-              <p class="photos__author">
-                Максим
-                <span class="photos__date">(40 часов назад)</span>
-              </p>
-              <p class="photos__text">
-                Где снег-то?
-              </p>
-              <a class="photos__like" href="#">Нравится:150</a>
-            </div>
+          <div class="photos__content-wrap">
+            <p class="photos__author">
+              Антон
+              <span class="photos__date">(12 часов назад)</span>
+            </p>
+            <p class="photos__text">
+              Соседи будут рады!
+            </p>
+            <a class="photos__like" href="#">Нравится:666</a>
           </div>
-          <div class="photos__item">
-            <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
-            </div>
-            <div class="photos__content-wrap">
-              <p class="photos__author">
-                Надежда
-                <span class="photos__date">(45 часов назад)</span>
-              </p>
-              <p class="photos__text">
-                Всем GM и взаимные лайки!
-              </p>
-              <a class="photos__like" href="#">Нравится:2560</a>
-            </div>
+        </div>
+        <div class="photos__item">
+          <div class="photos__img-wrap">
+            <img class="photos__img" src="img/photo-window-mobile@1x.jpg" alt="">
+          </div>
+          <div class="photos__content-wrap">
+            <p class="photos__author">
+              Борис
+              <span class="photos__date">(20 часов назад)</span>
+            </p>
+            <p class="photos__text">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <a class="photos__like" href="#">Нравится:215</a>
+          </div>
+        </div>
+        <div class="photos__item">
+          <div class="photos__img-wrap">
+            <img class="photos__img" src="img/photo-fair-mobile@1x.jpg" alt="">
+          </div>
+          <div class="photos__content-wrap">
+            <p class="photos__author">
+              Сергей
+              <span class="photos__date">(25 часов назад)</span>
+            </p>
+            <p class="photos__text">
+              Самая кубанская в мире!
+            </p>
+            <a class="photos__like" href="#">Нравится:4</a>
+          </div>
+        </div>
+        <div class="photos__item">
+          <div class="photos__img-wrap">
+            <img class="photos__img" src="img/photo-pov-mobile@1x.jpg" alt="">
+          </div>
+          <div class="photos__content-wrap">
+            <p class="photos__author">
+              Максим
+              <span class="photos__date">(40 часов назад)</span>
+            </p>
+            <p class="photos__text">
+              Где снег-то?
+            </p>
+            <a class="photos__like" href="#">Нравится:150</a>
+          </div>
+        </div>
+        <div class="photos__item">
+          <div class="photos__img-wrap">
+            <img class="photos__img" src="img/photo-wing-mobile@1x.jpg" alt="">
+          </div>
+          <div class="photos__content-wrap">
+            <p class="photos__author">
+              Надежда
+              <span class="photos__date">(45 часов назад)</span>
+            </p>
+            <p class="photos__text">
+              Всем GM и взаимные лайки!
+            </p>
+            <a class="photos__like" href="#">Нравится:2560</a>
           </div>
         </div>
       </section>
-      <section class="offers">
+      <section class="offers offers--page-photo-bottom">
         <div class="offers__inner">
           <h2 class="visually-hidden offers__title">Затмите их всех!</h2>
           <p class="offers__text offers__text--small">Затмите их всех!</p>
@@ -185,6 +186,12 @@
                 <button class="editor__tool editor__tool--contrast" type="button">Яркость</button>
               </div>
               <div class="editor__options">
+                <div class="editor__option-crop">
+                  <input class="input-range" type="range" value="100">
+                </div>
+                <div class="editor__option-crop">
+                  <input class="input-range" type="range" value="100">
+                </div>
                 <div class="editor__option-crop">
                   <input class="input-range" type="range" value="100">
                 </div>
@@ -219,5 +226,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

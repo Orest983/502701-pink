@@ -5,7 +5,13 @@
   }
 
   &__item {
-    margin-bottom: 20px;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
+
+  &__item--panorama {
+    width: 100%;
   }
 
   &__item:last-child {
@@ -13,12 +19,47 @@
   }
 
   &__img-wrap {
-    height: 180px;
+    min-height: 180px;
+  }
+
+  &__img-wrap--panorama {
+    position: relative;
+    min-height: 137px;
+    height: 137px;
+    overflow: hidden;
+  }
+
+  &__label {
+    position: absolute;
+    top: -137px;
+    right: 0px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    background-color: $color-pink;
+  }
+
+  &__img {
+    @include img-responsive();
   }
 
   &__content-wrap {
-    padding: 25px 20px;
+    padding: 18px;
     background-color: $color-lightgray;
+  }
+
+  &__content-wrap--panorama {
+    position: relative;
+    box-sizing: border-box;
+    width: $inner-mobile;
+    margin: 0 auto;
   }
 
   &__author {

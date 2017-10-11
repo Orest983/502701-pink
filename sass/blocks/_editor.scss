@@ -1,7 +1,7 @@
 .editor {
   &__tools {
     display: flex;
-    margin-bottom: 33px;
+    margin-bottom: 23px;
     justify-content: center;
     text-align: center;
   }
@@ -30,5 +30,14 @@
 
   &__tool--contrast {
     background: url("../../img/icon-editor-contrast.svg") 50% 50% no-repeat;
+  }
+
+  &__options {
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  &__option-crop:not(:first-child) {
+    display: none;
   }
 }
