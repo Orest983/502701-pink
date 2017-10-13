@@ -21,7 +21,7 @@
   }
 
   &__tool--crop {
-    background: url("../../img/icon-editor-crop.svg#active") 50% 50% no-repeat;
+  //  background: url("../../img/icon-editor-crop.svg#active") 50% 50% no-repeat;
   }
 
   &__tool--fill {
@@ -37,7 +37,49 @@
     margin: 0 auto;
   }
 
-  &__option-crop:not(:first-child) {
+  &__option--fill, &__option--contrast {
     display: none;
+  }
+}
+
+@media (min-width:$bp-tablet) {
+  .editor {
+    display: flex;
+    &__tools {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    &__tool {
+      box-sizing: border-box;
+      width: 24px;
+      height: 73px;
+      margin-right: 0;
+      background-size: 24px 23px;
+      border-bottom: 1px solid $color-darkgray;
+    }
+
+    &__tool--contrast {
+      background-size: 16px;
+    }
+
+    &__options {
+      margin: 0;
+    }
+
+    &__option {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      height: 73px;
+      padding-left: 31px;
+      padding-right: 5px;
+      border-bottom: 1px solid $color-darkgray;
+    }
+
+    &__option--flex, &__option--contrast {
+      display: flex;
+    }
   }
 }

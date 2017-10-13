@@ -9,6 +9,7 @@
   }
 
   &__img {
+    @include img-responsive();
     display: block;
     margin-bottom: 38px;
   }
@@ -30,5 +31,45 @@
 
   &__btn-post {
     margin-bottom: 12px;
+  }
+}
+
+@media (min-width:$bp-tablet) {
+  .upload {
+    padding-top: 56px;
+    padding-bottom: 16px;
+    &__inner {
+      width: $inner-tablet;
+    }
+
+    &__form {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__img-wrap {
+      width: 300px;
+    }
+
+    &__editor {
+      margin-bottom: 64px;
+    }
+
+    &__editor-wrap {
+      width: 275px;
+      margin-top: -17px;
+    }
+
+    &__btn-wrap {
+      width: 260px;
+    }
+
+    &__btn-post {
+      margin-bottom: 21px;
+    }
+
+    &__editor::after {
+      display: none;
+    }
   }
 }

@@ -36,10 +36,6 @@
     font-size: 14px;
     line-height: 30px;
   }
-
-  // &__text--small:last-child {
-  //   display: none;
-  // }
 }
 
 @media (min-width: $bp-tablet) {
@@ -49,6 +45,15 @@
     &--small {
       padding-top: 92px;
       padding-bottom: 72px;
+    }
+
+    &--page-photo {
+      padding-top: 93px;
+    }
+
+    &--page-photo-bottom {
+      padding-top: 63px;
+      padding-bottom: 70px;
     }
 
     &__inner {
