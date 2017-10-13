@@ -1,5 +1,5 @@
 .map {
-  width: $bp-mobile;
+  width: 100%;
   height: 200px;
   margin: 0 auto;
   background: url("../img/bg-map-mobile@1x.png") 50% 0 no-repeat;
@@ -7,14 +7,12 @@
 
 @media (min-width: $bp-tablet) {
   .map {
-    width: $bp-tablet;
     height: 374px;
   }
 }
 
 @media (min-width: $bp-tablet) {
   .map {
-    width: $bp-desktop;
     height: 477px;
   }
 }

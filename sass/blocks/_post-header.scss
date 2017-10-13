@@ -9,6 +9,7 @@
 
   &__background {
     order: 2;
+    width: 100%;
     min-height: 462px;
     background: url("../img/iphone-hand-mobile@1x.png") 2% 175px no-repeat;
   }
@@ -61,7 +62,6 @@
     }
 
     &__background {
-      width: $inner-tablet;
       height: 729px;
     }
 
