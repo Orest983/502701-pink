@@ -14,6 +14,7 @@
     font-size: 0;
     border: none;
     color: $color-pink;
+    background: transparent;
   }
 
   &__tool:last-child {
@@ -80,6 +81,23 @@
 
     &__option--flex, &__option--contrast {
       display: flex;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .editor {
+    &__tool {
+      width: 49px;
+    }
+
+    &__options {
+      width: 362px;
+    }
+
+    &__option {
+      padding-left: 42px;
+      padding-right: 31px;
     }
   }
 }

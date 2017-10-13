@@ -37,7 +37,8 @@
 @media (min-width:$bp-tablet) {
   .upload {
     padding-top: 56px;
-    padding-bottom: 16px;
+    padding-bottom: 53px;
+
     &__inner {
       width: $inner-tablet;
     }
@@ -49,6 +50,10 @@
 
     &__img-wrap {
       width: 300px;
+    }
+
+    &__img {
+      margin-bottom: 0;
     }
 
     &__editor {
@@ -70,6 +75,46 @@
 
     &__editor::after {
       display: none;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .upload {
+    box-sizing: border-box;
+    width: $inner-desktop;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-top: 57px;
+    padding-bottom: 56px;
+
+    &__inner {
+      width: 801px;
+    }
+
+    &__editor-wrap {
+      width: 410px;
+    }
+
+    &__editor {
+      margin-bottom: 143px;
+    }
+
+    &__btn-wrap {
+      display: flex;
+      justify-content: space-between;
+      width: auto;
+    }
+
+    &__btn-post {
+      width: 184px;
+      margin-bottom: 0px;
+    }
+
+    &__btn-reset {
+      width: 184px;
     }
   }
 }

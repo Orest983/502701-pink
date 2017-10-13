@@ -36,6 +36,12 @@
     font-size: 14px;
     line-height: 30px;
   }
+
+  &__text--page-photo {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $bp-tablet) {
@@ -49,6 +55,7 @@
 
     &--page-photo {
       padding-top: 93px;
+      padding-bottom: 77px;
     }
 
     &--page-photo-bottom {
@@ -76,6 +83,10 @@
       line-height: 30px;
     }
 
+    &__text--page-photo br {
+      display: none;
+    }
+
     &__text--small:last-child {
       display: block;
     }
@@ -86,6 +97,17 @@
   .offers {
     padding-top: 67px;
     padding-bottom: 87px;
+
+    &--page-photo {
+      padding-top: 91px;
+      padding-bottom: 89px;
+    }
+
+    &--page-photo-bottom {
+      padding-top: 61px;
+      padding-bottom: 65px;
+    }
+
     &__inner {
       width: $inner-desktop;
     }
@@ -94,6 +116,17 @@
       margin-bottom: 4px;
       font-size: 50px;
       line-height: 58px;
+    }
+
+    &__text--page-photo {
+      width: auto;
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__text--page-photo br {
+      display: block;
     }
   }
 }

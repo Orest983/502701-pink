@@ -1,8 +1,11 @@
 .post-header {
   margin-top: -66px;
   background: url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
-  // background-size: 255px 287px, cover; // contain, cover не работает!
   background-color: $color-lightblue;
+
+  &--small {
+    min-height: 237px;
+  }
 
   &__background {
     order: 2;
@@ -17,7 +20,6 @@
   &__inner--small {
     width: $bp-mobile;
     margin: 0 auto;
-    min-height: 237px;
   }
 
   &__title {
@@ -55,7 +57,7 @@
     }
 
     &__inner--small {
-      width: $bp-tablet;
+      width: $inner-tablet;
     }
 
     &__background {
@@ -73,10 +75,16 @@
 @media (min-width: $bp-desktop) {
   .post-header {
     min-height: 853px;
-
     &__inner {
       width: $inner-desktop;
-      height: 729px;
+    }
+
+    &--small {
+      min-height: 395px;
+    }
+
+    &__title--page-photo {
+      padding-top: 174px;
     }
 
     &__download {
