@@ -40,10 +40,6 @@
   cursor: pointer;
 }
 
-.input-range:active::-webkit-slider-thumb {
-  background-color: $color-pink;
-}
-
 /* All the same stuff for IE */
 .input-range::-ms-thumb {
   box-sizing: border-box;
