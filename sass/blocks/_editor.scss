@@ -21,10 +21,6 @@
     margin-right: 0;
   }
 
-  &__tool--crop {
-  //  background: url("../../img/icon-editor-crop.svg#active") 50% 50% no-repeat;
-  }
-
   &__tool--fill {
     background: url("../../img/icon-editor-fill.svg") 50% 50% no-repeat;
   }
@@ -38,14 +34,16 @@
     margin: 0 auto;
   }
 
-  &__option--fill, &__option--contrast {
+  &__option--fill,
+  &__option--contrast {
     display: none;
   }
 }
 
-@media (min-width:$bp-tablet) {
+@media (min-width: $bp-tablet) {
   .editor {
     display: flex;
+
     &__tools {
       display: flex;
       flex-direction: column;
@@ -79,7 +77,8 @@
       border-bottom: 1px solid $color-darkgray;
     }
 
-    &__option--flex, &__option--contrast {
+    &__option--flex,
+    &__option--contrast {
       display: flex;
     }
   }
