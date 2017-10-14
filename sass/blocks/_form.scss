@@ -1,16 +1,16 @@
 .form {
-  padding-bottom: 23px;
-  &__block {
-    padding-top: 36px;
-    padding-bottom: 42px;
+  padding-bottom: 24px;
+  &__block--gray {
+    background-color: $color-lightgray;
   }
 
   &__block--progress {
-    padding-bottom: 35px;
+    padding-top: 38px;
+    padding-bottom: 38px;
   }
 
   &__block--app {
-    padding-top: 39px;
+    padding-top: 38px;
     padding-bottom: 40px;
   }
 
@@ -19,12 +19,14 @@
     padding-bottom: 42px;
   }
 
-  &__block--gray {
-    background-color: $color-lightgray;
+  &__block--textarea {
+    padding-top: 39px;
+    padding-bottom: 46px;
   }
 
-  &__block--textarea {
-    padding-bottom: 47px;
+  &__block--contacts {
+    padding-top: 32px;
+    padding-bottom: 42px;
   }
 
   &__block--submit {
@@ -36,34 +38,35 @@
     margin: 0 auto;
   }
 
-  &__header {
-    margin-bottom: 40px;
-  }
-
-  &__header--app {
-    margin-bottom: 34px;
-  }
-
-  &__header--contacts {
-    display: none;
-  }
-
-  &__header--textarea {
-    margin-bottom: 17px;
-  }
-
-  &__header--progress {
-    margin-bottom: 42px;
-  }
-
-  &__header-title {
-    margin: 0;
+  &__legend {
+    margin: 0 auto;
     text-align: center;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
     text-transform: uppercase;
     color: $color-pink;
+  }
+
+  &__legend--app {
+    margin-bottom: 34px;
+  }
+
+  &__legend--contacts {
+    display: none;
+  }
+
+  &__legend--textarea {
+    margin-bottom: 17px;
+  }
+
+  &__legend--progress {
+    margin-bottom: 39px;
+  }
+
+  &__fieldset {
+    padding: 0px;
+    border: none;
   }
 
   &__group {
@@ -88,10 +91,10 @@
     cursor: pointer;
   }
 
-  &__label--text {
+  &__label--person {
     display: block;
     margin-bottom: 5px;
-    padding-left: 24px;
+    padding-left: 22px;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
@@ -102,7 +105,7 @@
   &__label--contacts {
     display: block;
     margin-bottom: 5px;
-    padding-left: 24px;
+    padding-left: 22px;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
@@ -167,7 +170,7 @@
     display: inline-block;
     padding-left: 70px;
     height: 43px;
-    line-height: 43px;
+    line-height: 40px;
     font-size: 18px;
     color: $color-darkblue;
   }
@@ -231,9 +234,9 @@
     font-size: 19px;
     font-weight: normal;
     line-height: 28px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $color-darkgray;
     border-radius: 2px;
-    color: #283645;
+    color: $color-darkblue;
   }
 
   &__btn {
@@ -270,43 +273,44 @@
     flex-direction: column;
     padding-bottom: 50px;
     &__block-inner {
+      box-sizing: border-box;
       width: $inner-tablet;
+      padding-left: 59px;
+    }
+
+    &__block-inner--app {
+      padding-bottom: 53px;
+    }
+
+    &__block-inner--contact {
+      padding-bottom: 26px;
+    }
+
+    &__block-inner--person {
+      padding-left: 0;
+    }
+
+    &__block-inner--progress {
+      padding-bottom: 44px;
     }
 
     &__block--textarea {
       padding-bottom: 68px;
     }
 
-    &__block-inner--fieldset {
-      position: relative;
-      box-sizing: border-box;
-      width: $inner-tablet;
-      padding-left: 59px;
-      padding-right: 59px;
-      border-radius: 2px;
-      border: 2px solid $color-darkgray;
-    }
-
-    &__block-inner--app {
-      min-height: 299px;
-    }
-
-    &__block-inner--contact {
-      min-height: 310px;
-    }
-
-    &__block-inner--progress {
-      min-height: 553px;
-    }
-
-    &__block-inner--textarea {
-      min-height: 293px;
-    }
-
     &__block-inner--submit {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-left: 0;
+    }
+
+    &__fieldset {
+      box-sizing: border-box;
+      width: $inner-tablet;
+      margin: 0 auto;
+      border-radius: 2px;
+      border: 2px solid $color-darkgray;
     }
 
     &__input-wrap {
@@ -314,14 +318,14 @@
     }
 
     &__input--contacts {
-      width: 438px;
+      width: 440px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
 
     &__input-icon {
       display: inline-block;
-      width: 60px;
+      width: 62px;
       height: 63px;
       border-top-right-radius: 2px;
       border-bottom-right-radius: 2px;
@@ -332,33 +336,31 @@
       height: 192px;
     }
 
-    &__header {
-      margin-top: -10px;
-      text-align: center;
-    }
-
-    &__header--app {
-      margin-bottom: 43px;
-    }
-
-    &__header--contacts {
-      display: block;
-      margin-bottom: 37px;
-    }
-
-    &__header--textarea {
-      margin-bottom: 37px;
-    }
-
-    &__header-title {
-      display: inline-block;
+    &__legend {
       padding-left: 32px;
       padding-right: 32px;
       background-color: $color-white;
     }
 
-    &__header-title br {
+    &__legend br {
       display: none;
+    }
+
+    &__legend--app {
+      margin-bottom: 43px;
+    }
+
+    &__legend--contacts {
+      display: block;
+      margin-bottom: 37px;
+    }
+
+    &__legend--progress {
+      margin-bottom: 44px;
+    }
+
+    &__legend--textarea {
+      margin-bottom: 37px;
     }
 
     &__block--gray {
@@ -367,22 +369,27 @@
 
     &__block--person {
       order: -5;
-      padding-bottom: 50px;
+      padding-bottom: 42px;
     }
 
     &__block--app {
       order: -4;
       padding-top: 17px;
-      padding-bottom: 29px;
+      padding-bottom: 25px;
     }
 
     &__block--contacts {
       order: -3;
-      padding-bottom: 29px;
+      padding-bottom: 19px;
     }
 
     &__block--progress {
-      padding-bottom: 29px;
+      padding-bottom: 18px;
+    }
+
+    &__block-inner--textarea {
+      padding-right: 59px;
+      padding-bottom: 49px;
     }
 
     &__group--person {
@@ -397,24 +404,26 @@
       margin-bottom: 29px;
     }
 
-    &__label--text {
+    &__label--person {
       margin: 0;
       padding-left: 0;
       padding-right: 20px;
     }
 
     &__label--checkbox {
-      padding-left: 58px;
+      padding-left: 61px;
+      line-height: 38px;
     }
 
     &__label--contacts {
       margin: 0;
       margin-top: 10px;
-      padding-left: 19px;
+      padding-left: 21px;
     }
 
     &__label--radio {
-      padding-left: 58px;
+      padding-left: 60px;
+      line-height: 42px;
     }
 
     &__btn {
@@ -423,6 +432,108 @@
 
     &__notice {
       padding: 0;
+    }
+  }
+}
+
+@media (min-width:$bp-desktop) {
+  .form {
+    outline: 1px solid red;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $inner-desktop;
+    margin: 0 auto;
+
+    &__block {
+      width: 100%;
+    }
+
+    &__block--person {
+      width: 470px;
+    }
+
+    &__block--app {
+      width: 436px;
+      padding-top: 0;
+    }
+
+    &__block-inner {
+      width: 820px;
+      padding-left: 0;
+    }
+
+    &__block-inner--app {
+      width: 436px;
+    }
+
+    &__block-inner--contact {
+      display: flex;
+      justify-content: space-between;
+      width: 820px;
+      padding-left: 0;
+    }
+
+    &__block-inner--person {
+      width: 470px;
+    }
+
+    &__block-inner--progress {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    &__group--contacts {
+      width: 375px;
+      margin-bottom: 0;
+    }
+
+    &__group--selfie {
+      width: 315px;
+    }
+
+    &__group--beach {
+      order: 4;
+      width: 315px;
+    }
+
+    &__group--chuck {
+      order: 2;
+      width: 295px;
+    }
+
+    &__group--souvenir {
+      order: 5;
+      width: 295px;
+    }
+
+    &__group--tower {
+      order: 3;
+    }
+
+    &__group--hotel {
+      order: 6;
+    }
+
+    &__fieldset {
+      width: 100%;
+    }
+
+    &__fieldset--app {
+      width: 436px;
+    }
+
+    &__legend--contacts {
+      margin-bottom: 33px;
+    }
+
+    &__input-icon {
+      width: 84px;
+    }
+
+    &__label--checkbox {
+      padding-left: 60px;
     }
   }
 }
