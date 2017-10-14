@@ -1,5 +1,6 @@
 .form {
   padding-bottom: 24px;
+
   &__block--gray {
     background-color: $color-lightgray;
   }
@@ -65,7 +66,7 @@
   }
 
   &__fieldset {
-    padding: 0px;
+    padding: 0;
     border: none;
   }
 
@@ -272,6 +273,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
+
     &__block-inner {
       box-sizing: border-box;
       width: $inner-tablet;
@@ -436,7 +438,7 @@
   }
 }
 
-@media (min-width:$bp-desktop) {
+@media (min-width: $bp-desktop) {
   .form {
     outline: 1px solid red;
     flex-direction: row;

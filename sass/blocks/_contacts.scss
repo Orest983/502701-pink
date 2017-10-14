@@ -56,6 +56,7 @@
 @media (min-width: $bp-tablet) {
   .contacts {
     padding-bottom: 27px;
+
     &__inner {
       width: $inner-tablet;
     }
@@ -102,6 +103,7 @@
 @media (min-width: $bp-desktop) {
   .contacts {
     padding-top: 71px;
+
     &__inner {
       width: $inner-desktop;
     }

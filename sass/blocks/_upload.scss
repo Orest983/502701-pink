@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width:$bp-tablet) {
+@media (min-width: $bp-tablet) {
   .upload {
     padding-top: 56px;
     padding-bottom: 53px;
@@ -110,7 +110,7 @@
 
     &__btn-post {
       width: 184px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
 
     &__btn-reset {

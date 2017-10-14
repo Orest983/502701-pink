@@ -1,24 +1,9 @@
 .text-block {
   box-sizing: border-box;
-  &--page-index {
-
-  }
-
-  &--page-photo {
-
-  }
 
   &__inner {
     width: $inner-mobile;
     margin: 0 auto;
-  }
-
-  &__inner--page-index {
-
-  }
-
-  &__inner--page-photo {
-
   }
 
   &__inner--page-form {
@@ -43,7 +28,7 @@
   }
 }
 
-@media (min-width:$bp-tablet) {
+@media (min-width: $bp-tablet) {
   .text-block {
     &__inner {
       width: $inner-tablet;
@@ -68,7 +53,7 @@
   }
 }
 
-@media (min-width:$bp-desktop) {
+@media (min-width: $bp-desktop) {
   .text-block {
     &__inner--page-form {
       width: 760px;
