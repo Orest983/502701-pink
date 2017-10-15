@@ -5,10 +5,12 @@
 
   &--opened {
     display: block;
+    border-top: 1px solid #000000;
   }
 
   &--closed {
     display: none;
+    border-bottom: none;
   }
 
   &__item {
