@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 55px;
+  padding-top: 45px;
   padding-bottom: 0;
   background-color: $color-lightgray;
 
@@ -11,8 +11,8 @@
   &__inner::after {
     display: block;
     content: "";
-    height: 275px;
-    background: url("../img/iphone-screen-mobile@1x.png") 50% 0 no-repeat;
+    height: 287px;
+    background: url("../img/iphone-screen-mobile@1x.png") 50% 8px no-repeat;
     background-size: 157px auto;
   }
 
@@ -23,6 +23,9 @@
 
 @media (min-width: $bp-tablet) {
   .advantages {
+    padding-top: 80px;
+    padding-bottom: 5px;
+
     &__inner {
       position: relative;
       width: $inner-tablet;

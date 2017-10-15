@@ -1,14 +1,30 @@
 .offers {
+  padding-top: 42px;
+  padding-bottom: 40px;
+
+  &--small {
+    padding-top: 46px;
+    padding-bottom: 34px;
+  }
+
+  &--page-photo {
+    padding-top: 46px;
+    padding-bottom: 48px;
+  }
+
+  &--page-photo-bottom {
+    padding-top: 45px;
+    padding-bottom: 42px;
+  }
+
   &__inner {
     width: $inner-mobile;
     margin: 0 auto;
-    padding-top: 45px;
-    padding-bottom: 40px;
   }
 
   &__text {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     text-align: center;
     font-weight: 300;
     font-size: 24px;
@@ -20,29 +36,97 @@
     font-size: 14px;
     line-height: 30px;
   }
+
+  &__text--page-photo {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $bp-tablet) {
   .offers {
+    padding-top: 50px;
+
+    &--small {
+      padding-top: 92px;
+      padding-bottom: 72px;
+    }
+
+    &--page-photo {
+      padding-top: 93px;
+      padding-bottom: 77px;
+    }
+
+    &--page-photo-bottom {
+      padding-top: 63px;
+      padding-bottom: 70px;
+    }
+
     &__inner {
       width: $inner-tablet;
     }
 
     &__text {
-      font-size: 40px;
+      width: 500px;
+      margin: 0 auto;
       margin-bottom: 0;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 30px;
+    }
+
+    &__text--small {
+      margin-bottom: 0;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 30px;
+    }
+
+    &__text--page-photo br {
+      display: none;
+    }
+
+    &__text--small:last-child {
+      display: block;
     }
   }
 }
 
 @media (min-width: $bp-desktop) {
   .offers {
+    padding-top: 67px;
+    padding-bottom: 87px;
+
+    &--page-photo {
+      padding-top: 91px;
+      padding-bottom: 89px;
+    }
+
+    &--page-photo-bottom {
+      padding-top: 61px;
+      padding-bottom: 65px;
+    }
+
     &__inner {
       width: $inner-desktop;
     }
 
     &__text {
+      margin-bottom: 4px;
       font-size: 50px;
+      line-height: 58px;
+    }
+
+    &__text--page-photo {
+      width: auto;
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__text--page-photo br {
+      display: block;
     }
   }
 }

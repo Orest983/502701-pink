@@ -1,6 +1,6 @@
 .advantages-list {
   &__item {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   &__title {
@@ -28,10 +28,12 @@
 
     &__item {
       margin-left: auto;
+      margin-bottom: 36px;
       width: 310px;
     }
 
     &__title {
+      margin-bottom: 11px;
       text-align: left;
     }
 
@@ -44,13 +46,13 @@
 @media (min-width: $bp-desktop) {
   .advantages-list {
     flex-direction: row;
+    justify-content: space-between;
 
     &__item {
-      flex-grow: 1;
-      padding-left: 30px;
-      padding-right: 30px;
+      margin: 0;
+      padding-top: 265px;
       position: relative;
-      width: 240px;
+      width: 300px;
     }
 
     &__item::before {
@@ -60,12 +62,16 @@
     }
 
     &__title {
+      width: 230px;
+      margin: 0 auto;
+      margin-bottom: 23px;
       text-align: center;
       line-height: 30px;
       font-size: 30px;
     }
 
     &__text {
+      padding: 0 26px;
       text-align: center;
       line-height: 30px;
       font-size: 18px;

@@ -14,7 +14,7 @@
     width: 12px;
     height: 12px;
     padding: 0;
-    margin: 0 8px;
+    margin: 0 5px;
     border-radius: 50%;
     border: 3px solid $color-white;
     background-color: $color-darkergray;
@@ -33,6 +33,14 @@
   }
 }
 
+@media (min-width: $bp-tablet) {
+  .slider {
+    &__toggle {
+      margin: 0 4px;
+    }
+  }
+}
+
 @media (min-width: $bp-desktop) {
   .slider {
     &__toggle {
@@ -45,9 +53,9 @@
 
     &__control {
       position: absolute;
-      top: 15%;
+      top: 14%;
       width: 30px;
-      height: 41px;
+      height: 42px;
       border: none;
       cursor: pointer;
     }

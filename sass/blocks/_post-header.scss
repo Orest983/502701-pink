@@ -1,13 +1,17 @@
 .post-header {
   margin-top: -66px;
-  background: url("../img/iphone-hand-mobile@1x.png") 50% 175px no-repeat,
-    url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
-  // background-size: 255px 287px, cover; // contain, cover не работает!
+  background: url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
   background-color: $color-lightblue;
+
+  &--small {
+    min-height: 237px;
+  }
 
   &__background {
     order: 2;
-    min-height: 460px;
+    width: 100%;
+    min-height: 462px;
+    background: url("../img/iphone-hand-mobile@1x.png") 2% 175px no-repeat;
   }
 
   &__inner {
@@ -15,16 +19,18 @@
   }
 
   &__inner--small {
-    min-height: 237px;
-    background: url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
+    width: $bp-mobile;
+    margin: 0 auto;
   }
 
   &__title {
-    margin: 0;
-    padding-top: 100px;
+    width: 269px;
+    margin: 0 auto;
+    padding-top: 98px;
     font-weight: 300;
     font-size: 24px;
     text-align: center;
+    line-height: 28px;
     color: $color-white;
   }
 }
@@ -34,21 +40,34 @@
     margin-top: -110px;
     min-height: 729px;
 
+    &--small {
+      min-height: 438px;
+    }
+
+    &__title {
+      width: 480px;
+      padding-top: 180px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+
     &__inner {
       display: flex;
       margin: 0 auto;
-      width: $bp-tablet;
+      width: $inner-tablet;
+    }
+
+    &__inner--small {
+      width: $inner-tablet;
     }
 
     &__background {
-      width: $inner-tablet;
       height: 729px;
     }
 
     &__download {
       order: 1;
       margin-top: 200px;
-      margin-left: 20px;
     }
   }
 }
@@ -59,12 +78,23 @@
 
     &__inner {
       width: $inner-desktop;
-      height: 729px;
+    }
+
+    &--small {
+      min-height: 395px;
+    }
+
+    &__title--page-form {
+      width: 780px;
+      padding-top: 174px;
+    }
+
+    &__title--page-photo {
+      padding-top: 174px;
     }
 
     &__download {
-      margin-top: 212px;
-      margin-left: 10px;
+      margin-top: 217px;
     }
   }
 }

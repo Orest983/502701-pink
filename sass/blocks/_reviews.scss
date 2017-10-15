@@ -1,6 +1,6 @@
 .reviews {
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 41px;
+  padding-bottom: 60px;
 
   &__inner {
     width: $inner-mobile;
@@ -8,7 +8,7 @@
   }
 
   &__list {
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 
   &__item {
@@ -39,14 +39,20 @@
     margin: 0;
     text-align: center;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $bp-tablet) {
   .reviews {
+    padding-top: 37px;
+
     &__inner {
       width: $inner-tablet;
+    }
+
+    &__list {
+      margin-bottom: 26px;
     }
 
     &__item {
@@ -55,7 +61,7 @@
     }
 
     &__author {
-      margin-bottom: 5px;
+      margin-bottom: 2px;
       font-size: 20px;
     }
 
@@ -71,7 +77,7 @@
 
     &__text {
       order: -1;
-      margin-bottom: 44px;
+      margin-bottom: 34px;
       font-size: 18px;
       line-height: 30px;
     }
@@ -80,8 +86,23 @@
 
 @media (min-width: $bp-desktop) {
   .reviews {
+    padding-top: 185px;
+    padding-bottom: 80px;
+
     &__inner {
       width: $inner-desktop;
+    }
+
+    &__text {
+      margin-bottom: 36px;
+    }
+
+    &__author-info {
+      font-size: 18px;
+    }
+
+    &__author {
+      font-size: 24px;
     }
   }
 }

@@ -1,7 +1,7 @@
 .editor {
   &__tools {
     display: flex;
-    margin-bottom: 33px;
+    margin-bottom: 23px;
     justify-content: center;
     text-align: center;
   }
@@ -14,14 +14,11 @@
     font-size: 0;
     border: none;
     color: $color-pink;
+    background: transparent;
   }
 
   &__tool:last-child {
     margin-right: 0;
-  }
-
-  &__tool--crop {
-    background: url("../../img/icon-editor-crop.svg#active") 50% 50% no-repeat;
   }
 
   &__tool--fill {
@@ -30,5 +27,76 @@
 
   &__tool--contrast {
     background: url("../../img/icon-editor-contrast.svg") 50% 50% no-repeat;
+  }
+
+  &__options {
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  &__option--fill,
+  &__option--contrast {
+    display: none;
+  }
+}
+
+@media (min-width: $bp-tablet) {
+  .editor {
+    display: flex;
+
+    &__tools {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    &__tool {
+      box-sizing: border-box;
+      width: 24px;
+      height: 73px;
+      margin-right: 0;
+      background-size: 24px 23px;
+      border-bottom: 1px solid $color-darkgray;
+    }
+
+    &__tool--contrast {
+      background-size: 16px;
+    }
+
+    &__options {
+      margin: 0;
+    }
+
+    &__option {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      height: 73px;
+      padding-left: 31px;
+      padding-right: 5px;
+      border-bottom: 1px solid $color-darkgray;
+    }
+
+    &__option--flex,
+    &__option--contrast {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .editor {
+    &__tool {
+      width: 49px;
+    }
+
+    &__options {
+      width: 362px;
+    }
+
+    &__option {
+      padding-left: 42px;
+      padding-right: 31px;
+    }
   }
 }

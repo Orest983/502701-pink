@@ -1,6 +1,6 @@
 .contacts {
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 45px;
+  padding-bottom: 43px;
 
   &__inner {
     width: $inner-mobile;
@@ -15,15 +15,18 @@
 
   &__text {
     margin: 0;
-    margin-bottom: 40px;
     text-align: center;
     font-weight: 300;
     font-size: 24px;
     color: $color-darkblue;
   }
 
+  &__text--last {
+    margin-bottom: 37px;
+  }
+
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
 
   &__item:last-child {
@@ -32,7 +35,7 @@
 
   &__item-title {
     margin: 0;
-    margin-bottom: 11px;
+    margin-bottom: 4px;
     text-align: center;
     font-weight: 700;
     font-size: 18px;
@@ -52,6 +55,8 @@
 
 @media (min-width: $bp-tablet) {
   .contacts {
+    padding-bottom: 27px;
+
     &__inner {
       width: $inner-tablet;
     }
@@ -64,7 +69,19 @@
 
     &__item {
       width: 300px;
-      margin-bottom: 55px;
+      margin-bottom: 50px;
+    }
+
+    &__item br {
+      display: initial;
+    }
+
+    &__item-title {
+      margin-bottom: 7px;
+    }
+
+    &__info {
+      line-height: 29px;
     }
 
     &__item:nth-child(3) {
@@ -74,12 +91,19 @@
 
     &__text {
       font-size: 40px;
+      line-height: 48px;
+    }
+
+    &__text--last {
+      margin-bottom: 45px;
     }
   }
 }
 
 @media (min-width: $bp-desktop) {
   .contacts {
+    padding-top: 71px;
+
     &__inner {
       width: $inner-desktop;
     }
@@ -89,8 +113,12 @@
     }
 
     &__text {
-      margin-bottom: 68px;
+      margin-bottom: 12px;
       font-size: 50px;
+    }
+
+    &__text--last {
+      margin-bottom: 64px;
     }
 
     &__item:nth-child(2) {
@@ -102,7 +130,7 @@
     }
 
     &__item-title {
-      margin-bottom: 32px;
+      margin-bottom: 25px;
     }
   }
 }

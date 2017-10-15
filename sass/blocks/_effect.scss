@@ -5,10 +5,10 @@
 @media (min-width: $bp-tablet) {
   .effect {
     display: block;
+    padding-top: 59px;
+    padding-bottom: 59px;
 
     &__inner {
-      padding-top: 59px;
-      padding-bottom: 59px;
       width: $inner-tablet;
       margin: 0 auto;
     }
@@ -26,11 +26,13 @@
     }
 
     &__description {
+      margin-top: 10px;
       width: 310px;
     }
 
     &__title {
       margin: 0;
+      margin-bottom: 10px;
       width: 170px;
       font-size: 30px;
       line-height: 36px;
@@ -38,6 +40,8 @@
     }
 
     &__text {
+      margin: 0;
+      margin-bottom: 10px;
       font-size: 14px;
       line-height: 24px;
       color: $color-darkerblue;
@@ -53,6 +57,7 @@
 
 @media (min-width: $bp-desktop) {
   .effect {
+    padding-bottom: 64px;
     background-color: $color-lightgray;
 
     &__inner {
@@ -60,21 +65,32 @@
     }
 
     &__clock {
-      width: 370px;
+      width: 357px;
       height: 350px;
       margin-right: 10px;
       background: url("http://placehold.it/300X350") no-repeat;
     }
 
+    &__content {
+      align-items: stretch;
+    }
+
     &__description {
+      margin-top: 93px;
       width: 535px;
     }
 
     &__title {
+      margin-bottom: 21px;
       width: 100%;
     }
 
+    &__title br {
+      display: none;
+    }
+
     &__text {
+      margin-bottom: 31px;
       font-size: 18px;
       line-height: 30px;
     }
