@@ -7,10 +7,6 @@
     background-color: rgba(#1d2631, 0.7);
   }
 
-  &--nav-opened {
-    border-bottom: 1px solid $color-black;
-  }
-
   &__inner {
     display: flex;
     align-items: center;
