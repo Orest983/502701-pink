@@ -1,6 +1,6 @@
 .reviews {
-  padding-top: 41px;
-  padding-bottom: 60px;
+  padding-top: 43px;
+  padding-bottom: 33px;
 
   &__inner {
     width: $inner-mobile;
@@ -8,7 +8,7 @@
   }
 
   &__list {
-    margin-bottom: 31px;
+    margin-bottom: 33px;
   }
 
   &__item {
@@ -22,7 +22,7 @@
 
   &__author {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     text-align: center;
     font-weight: 700;
     font-size: 18px;
@@ -45,7 +45,8 @@
 
 @media (min-width: $bp-tablet) {
   .reviews {
-    padding-top: 37px;
+    padding-top: 38px;
+    padding-bottom: 9px;
 
     &__inner {
       width: $inner-tablet;
@@ -61,7 +62,7 @@
     }
 
     &__author {
-      margin-bottom: 2px;
+      margin-bottom: 3px;
       font-size: 20px;
     }
 
@@ -86,8 +87,19 @@
 
 @media (min-width: $bp-desktop) {
   .reviews {
-    padding-top: 185px;
-    padding-bottom: 80px;
+    padding-top: 0;
+    padding-bottom: 2px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 185px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position-x: 50%;
+      background-position-y: 73px;
+      background-size: 75px;
+    }
 
     &__inner {
       width: $inner-desktop;
@@ -103,6 +115,10 @@
 
     &__author {
       font-size: 24px;
+    }
+
+    &__quotes {
+      display: none;
     }
   }
 }

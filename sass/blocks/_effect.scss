@@ -19,10 +19,31 @@
     }
 
     &__clock {
-      width: 300px;
-      height: 280px;
-      margin-right: 10px;
-      background: url("http://placehold.it/240X280") no-repeat;
+      position: relative;
+      width: 238px;
+      height: 275px;
+      margin-right: 71px;
+      background-image: url("../img/icon-timer.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &__clock-inside {
+      position: absolute;
+      left: 18px;
+      top: 55px;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+      width: 202px;
+      height: 202px;
+      border: 13px solid $color-pink;
+      border-radius: 50%;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 162px;
+      color: $color-pink;
+      text-align: center;
     }
 
     &__description {
@@ -57,7 +78,7 @@
 
 @media (min-width: $bp-desktop) {
   .effect {
-    padding-bottom: 64px;
+    padding-bottom: 52px;
     background-color: $color-lightgray;
 
     &__inner {
@@ -65,10 +86,20 @@
     }
 
     &__clock {
-      width: 357px;
-      height: 350px;
-      margin-right: 10px;
-      background: url("http://placehold.it/300X350") no-repeat;
+      width: 302px;
+      height: 361px;
+      margin-right: 64px;
+      background-size: 300px 346px;
+    }
+
+    &__clock-inside {
+      left: 22px;
+      top: 70px;
+      width: 253px;
+      height: 253px;
+      border: 17px solid $color-pink;
+      font-size: 120px;
+      line-height: 206px;
     }
 
     &__content {
@@ -76,7 +107,7 @@
     }
 
     &__description {
-      margin-top: 93px;
+      margin-top: 91px;
       width: 535px;
     }
 

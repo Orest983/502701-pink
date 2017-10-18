@@ -17,7 +17,7 @@
     </symbol>
   </svg>
 
-    <header class="page-header page-header--nav-opened">
+    <header class="page-header">
       <div class="page-header__inner">
         <a class="page-header__logo" href="/">
           <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
@@ -70,7 +70,11 @@
         <h2 class="visually-hidden photos__title">Фотографии</h2>
         <div class="photos__item photos__item--panorama">
           <div class="photos__img-wrap photos__img-wrap--panorama">
-            <img class="photos__img" src="img/panorama-mobile@1x.jpg" alt="">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photos__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x">
+            </picture>
           </div>
           <div class="photos__content-wrap photos__content-wrap--panorama">
             <span class="photos__label">Панорама дня</span>
@@ -94,7 +98,11 @@
         <div class="photos__inner">
           <div class="photos__item">
             <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-car-mobile@1x.jpg" alt="">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photos__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x">
+              </picture>
             </div>
             <div class="photos__content-wrap">
               <p class="photos__author">
@@ -114,7 +122,11 @@
           </div>
           <div class="photos__item">
             <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-drumset-mobile@1x.jpg" alt="">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photos__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x">
+              </picture>
             </div>
             <div class="photos__content-wrap">
               <p class="photos__author">
@@ -134,7 +146,11 @@
           </div>
           <div class="photos__item">
             <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-window-mobile@1x.jpg" alt="">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="photos__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x">
+              </picture>
             </div>
             <div class="photos__content-wrap">
               <p class="photos__author">
@@ -154,7 +170,11 @@
           </div>
           <div class="photos__item">
             <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-fair-mobile@1x.jpg" alt="">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photos__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x">
+              </picture>
             </div>
             <div class="photos__content-wrap">
               <p class="photos__author">
@@ -174,7 +194,11 @@
           </div>
           <div class="photos__item">
             <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-pov-mobile@1x.jpg" alt="">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photos__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x">
+              </picture>
             </div>
             <div class="photos__content-wrap">
               <p class="photos__author">
@@ -194,7 +218,11 @@
           </div>
           <div class="photos__item">
             <div class="photos__img-wrap">
-              <img class="photos__img" src="img/photo-wing-mobile@1x.jpg" alt="">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photos__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x">
+              </picture>
             </div>
             <div class="photos__content-wrap">
               <p class="photos__author">
@@ -226,7 +254,11 @@
           <h2 class="visually-hidden upload__title">Загрузить фото</h2>
           <form class="upload__form" action="index.html" method="post" enctype="multipart/form-data">
             <div class="upload__img-wrap">
-              <img class="upload__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="upload__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x">
+              </picture>
             </div>
             <div class="upload__editor-wrap">
               <div class="upload__editor editor">

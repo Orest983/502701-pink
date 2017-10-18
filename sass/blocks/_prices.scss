@@ -1,7 +1,16 @@
 .prices {
-  padding-top: 65px;
   padding-bottom: 40px;
   background-color: $color-lightgray;
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    height: 92px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: center -82px;
+    background-repeat: no-repeat;
+  }
 
   &__inner {
     width: 100%;
@@ -105,8 +114,12 @@
 
 @media (min-width: $bp-tablet) {
   .prices {
-    padding-top: 41px;
+    padding-top: 0;
     padding-bottom: 68px;
+
+    &::before {
+      background-position: center -65px;
+    }
 
     &__inner {
       width: $inner-tablet;
@@ -164,8 +177,12 @@
 
 @media (min-width: $bp-desktop) {
   .prices {
-    padding-top: 75px;
     padding-bottom: 95px;
+
+    &::before {
+      background-position: center -50px;
+      margin-bottom: 60px;
+    }
 
     &__inner {
       width: $inner-desktop;
