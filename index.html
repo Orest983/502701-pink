@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header page-header--nav-opened">
+    <header class="page-header">
       <div class="page-header__inner">
         <a class="page-header__logo" href="/">
           <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
@@ -43,10 +46,10 @@
     </header>
     <main class="page-main">
       <section class="post-header">
-        <div class="post-header__inner">
-          <div class="post-header__background">
+        <div class="post-header__inner post-header__inner--background">
+          <!-- <div class="post-header__background"> -->
             <h1 class="visually-hidden">Мобильное приложение Pink</h1>
-          </div>
+          <!-- </div> -->
           <section class="post-header__download download">
             <div class="download__inner">
               <h2 class="visually-hidden download__title">Взгляните<br>на жизнь<br>иначе!</h2>
@@ -62,26 +65,27 @@
                   <a class="download__link download__link--windows" href="#">Windows</a>
                 </li>
               </ul>
-              <p class="download__text">
-                Доступно для iPhone, iPad, Android, <br>
-                Windows Phone, OS X, Windows 8
-              </p>
+              <p class="download__text">Доступно для iPhone, iPad, Android, <br>Windows Phone, OS X, Windows 8</p>
             </div>
           </section>
         </div>
       </section>
-      <section class="offers">
-        <div class="offers__inner">
-          <h2 class="visually-hidden offers__title">Устали от серости мегаполиса?</h2>
-          <p class="offers__text">Устали от серости мегаполиса?</p>
-          <p class="offers__text">Нам есть, что вам<br>предложить!</p>
+      <section class="text-block text-block--page-index">
+        <div class="text-block__inner text-block__inner--page-index">
+          <h2 class="visually-hidden text-block__title">Устали от серости мегаполиса?</h2>
+          <p class="text-block__text text-block__text--page-index">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="text-block__text text-block__text--page-index">
+            Нам есть, что вам<br>предложить!</p>
+          </p>
         </div>
       </section>
       <section class="advantages">
         <div class="advantages__inner">
           <h2 class="visually-hidden advantages__title">Наше приложение</h2>
           <ul class="advantages__list advantages-list">
-            <li class="advantages-list__item">
+            <li class="advantages-list__item advantages-list__item--screen1">
               <h3 class="advantages-list__title">
                 Поднимает настроение
               </h3>
@@ -89,7 +93,7 @@
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
             </li>
-            <li class="advantages-list__item">
+            <li class="advantages-list__item advantages-list__item--screen2">
               <h3 class="advantages-list__title">
                 Меняет мир вокруг
               </h3>
@@ -97,7 +101,7 @@
                 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
               </p>
             </li>
-            <li class="advantages-list__item">
+            <li class="advantages-list__item advantages-list__item--screen3">
               <h3 class="advantages-list__title">
                 Заводит новых друзей
               </h3>
@@ -110,9 +114,13 @@
       </section>
       <section class="effect">
         <div class="effect__inner">
-          <h2 class="visually-hidden effect__title">Эффект от приложения Pink</h2>
+          <h2 class="visually-hidden">Эффект от приложения Pink</h2>
           <div class="effect__content">
-            <div class="effect__clock"></div>
+            <div class="effect__clock">
+              <div class="effect__clock-inside">
+                  24
+              </div>
+            </div>
             <div class="effect__description">
               <h3 class="effect__title">Эффект <br>на 24 часа!</h3>
               <p class="effect__text">
@@ -132,24 +140,27 @@
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
               <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                <span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило
+                по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой
+                в комментариях к выложенной фотографии!<span class="reviews__quotes">»</span>
               </p>
             </blockquote>
             <blockquote class="reviews__item">
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
               <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                <span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило
+                по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой
+                в комментариях к выложенной фотографии!<span class="reviews__quotes">»</span>
               </p>
             </blockquote>
             <blockquote class="reviews__item">
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
               <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                <span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило
+                по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой
+                в комментариях к выложенной фотографии!<span class="reviews__quotes">»</span>
               </p>
             </blockquote>
           </div>
@@ -242,7 +253,7 @@
       </section>
       <div id="map" class="map"></div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--xs-hidden">
       <div class="page-footer__inner">
         <a class="page-footer__logo" href="/">
           <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Pink">

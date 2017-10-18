@@ -3,7 +3,6 @@
   var toggle = document.querySelector(".main-nav__toggle");
   var siteList = document.querySelector(".site-list");
 
-  pageHader.classList.toggle("page-header--nav-opened");
   siteList.classList.toggle("site-list--opened");
   siteList.classList.toggle("site-list--closed");
 

@@ -6,6 +6,10 @@
     margin: 0 auto;
   }
 
+  &__inner--page-index {
+    padding-top: 41px;
+  }
+
   &__inner--page-form {
     padding-top: 45px;
     padding-bottom: 34px;
@@ -17,6 +21,13 @@
     line-height: 30px;
     text-align: center;
     color: $color-darkerblue;
+  }
+
+  &__text--page-index {
+    margin-bottom: 29px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
   }
 
   &__text--page-form br {
@@ -34,6 +45,10 @@
       width: $inner-tablet;
     }
 
+    &__inner--page-index {
+      padding-top: 49px;
+    }
+
     &__inner--page-form {
       padding-top: 92px;
       padding-bottom: 72px;
@@ -41,6 +56,12 @@
 
     &__text {
       font-size: 18px;
+    }
+
+    &__text--page-index {
+      margin-bottom: 0;
+      font-size: 40px;
+      line-height: 48px;
     }
 
     &__text--page-form br {
@@ -55,6 +76,15 @@
 
 @media (min-width: $bp-desktop) {
   .text-block {
+    &__inner {
+      width: $inner-desktop;
+    }
+
+    &__inner--page-index {
+      padding-top: 69px;
+      padding-bottom: 55px;
+    }
+
     &__inner--page-form {
       width: 760px;
       padding-top: 91px;
@@ -71,6 +101,12 @@
 
     &__text--mobile-hidden {
       display: inline-block;
+    }
+
+    &__text--page-index {
+      margin-bottom: 0;
+      font-size: 50px;
+      line-height: 59px;
     }
   }
 }
