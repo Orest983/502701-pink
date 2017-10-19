@@ -5,7 +5,7 @@
 *.pdf
 *.psd
 *.sublime*
-todo.html
+build/
 css/*.css
 img/layout/
 node_modules/
