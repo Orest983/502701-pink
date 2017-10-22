@@ -1,4 +1,5 @@
 .prices {
+  margin: 0 auto;
   padding-bottom: 40px;
   background-color: $color-lightgray;
 
@@ -33,6 +34,7 @@
     justify-content: center;
     box-sizing: border-box;
     min-height: 98px;
+    height: 98px;
     border-left: 1px solid $color-darkgray;
     border-right: 1px solid $color-darkgray;
     background-color: $color-darkblue;
@@ -43,6 +45,37 @@
     border-bottom: 1px solid $color-darkgray;
     border-left: none;
     border-right: none;
+  }
+
+  &__header--hit {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__header--hit::after {
+    content: "ХИТ";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: rotate(-45deg);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    color: $color-white;
+  }
+
+  &__header--hit::before {
+    content: '';
+    position: absolute;
+    top: -37px;
+    left: -44px;
+    width: 45px;
+    height: 30px;
+    transform: rotate(-45deg);
+    background-color: transparent;
+    border-style: solid;
+    border-width: 27px;
+    border-color: transparent transparent $color-pink;
   }
 
   &__header-title {
@@ -79,15 +112,32 @@
 
   &__feature {
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
     height: 60px;
     padding-left: 22px;
-    line-height: 60px;
     font-size: 14px;
     text-transform: uppercase;
     color: $color-darkblue;
     border: 1px solid $color-darkgray;
     background-color: $color-white;
+  }
+
+  &__feature-text {
+    width: 193px;
+  }
+
+  &__feature-icon {
+    width: 60px;
+  }
+
+  &__feature-icon--yes {
+    fill: $color-green;
+  }
+
+  &__feature-icon--no {
+    fill: $color-red;
   }
 
   &__item {
@@ -126,7 +176,7 @@
     }
 
     &__list {
-      position: initial;
+      position: relative;
       left: unset;
       transform: unset;
       width: 100%;
@@ -134,10 +184,14 @@
 
     &__feature {
       padding-left: 15px;
+      min-height: 47px;
       height: 47px;
-      line-height: 47px;
       font-size: 14px;
       text-transform: none;
+    }
+
+    &__feature-icon {
+      width: 90%;
     }
 
     &__item {
@@ -155,6 +209,16 @@
 
     &__header {
       min-height: 79px;
+      height: 79px;
+    }
+
+    &__header--hit::before {
+      left: -55px;
+    }
+
+    &__header--hit::after {
+      top: 4px;
+      left: 8px;
     }
 
     &__header-title {
@@ -195,20 +259,37 @@
 
     &__feature {
       min-height: 60px;
-      padding-left: 23px;
+      height: 60px;
+      padding-left: 20px;
       font-size: 18px;
+    }
+
+    &__feature--ie {
+      height: 60px;
     }
 
     &__header {
       min-height: 98px;
+      height: 98px;
+    }
+
+    &__header--hit::before {
+      left: -44px;
+    }
+
+    &__header--hit::after {
+      top: 10px;
+      left: 10px;
     }
 
     &__header-title {
       font-size: 18px;
+      line-height: 26px;
     }
 
     &__cost {
       font-size: 24px;
+      line-height: 38px;
     }
 
     &__currency {

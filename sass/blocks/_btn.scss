@@ -17,8 +17,28 @@
     color: $color-pink;
   }
 
-  &--gray {
-    border: 3px solid $color-darkergray;
-    color: $color-darkergray;
+  &--pink:hover {
+    background-color: $color-pink;
+    color: $color-white;
   }
+
+  &--pink:active {
+    color: $color-lightpink;
+  }
+
+  &--gray {
+    border: 3px solid $color-btn-gray-border;
+    color: $color-btn-gray-text;
+  }
+
+  &--gray:hover {
+    border: 3px solid $color-btn-gray-border--hover;
+    color: $color-btn-gray-text--hover;
+  }
+
+  &--gray:active {
+    background-color: $color-btn-gray-bg--active;
+    color: $color-btn-gray-text--active;
+  }
+
 }

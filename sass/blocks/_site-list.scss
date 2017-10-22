@@ -17,8 +17,6 @@
     background-color: $color-darkblue;
     border-bottom: 1px solid $color-black;
     border-top: 1px solid $color-lighterblue;
-    // box-shadow: 0 -1px 0 $color-black,
-    //   inset 0 1px 0 rgba($color-white, 0.15);
   }
 
   &__link {
@@ -30,6 +28,14 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+
+  &__link:hover {
+    color: $color-pink;
+  }
+
+  &__link:active {
+    color: $color-purple;
+  }
 }
 
 @media (min-width: $bp-desktop) {
@@ -37,14 +43,34 @@
     display: flex;
     justify-content: space-between;
 
+    &--opened {
+      border-top: none;
+    }
+
     &__item {
+      position: relative;
       background: transparent;
       border: none;
+    }
+
+    &__item--active::after {
+      content: "";
+      position: absolute;
+      bottom: 13px;
+      right: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $color-white;
     }
 
     &__link {
       font-weight: normal;
       text-transform: none;
+    }
+
+    &__link:active {
+      color: $color-darkergray;
     }
   }
 }

@@ -1,32 +1,48 @@
 .editor {
   &__tools {
     display: flex;
+    margin: 0 auto;
     margin-bottom: 23px;
-    justify-content: center;
-    text-align: center;
+    padding-left: 35px;
+    padding-right: 45px;
+    justify-content: space-between;
+    // outline: 1px solid;
   }
 
   &__tool {
     display: block;
-    margin-right: 35px;
+    padding: 0;
     width: 44px;
     height: 50px;
     font-size: 0;
     border: none;
     color: $color-pink;
     background: transparent;
+    cursor: pointer;
   }
 
-  &__tool:last-child {
-    margin-right: 0;
+  &__tool-icon {
+    fill: $color-darkergray;
+  }
+
+  &__tool-icon:hover {
+    fill: $color-darkestgray;
+  }
+
+  &__tool-icon--active {
+    fill: $color-pink;
+  }
+
+  &__tool--crop {
+    width: 44px;
   }
 
   &__tool--fill {
-    background: url("../../img/icon-editor-fill.svg") 50% 50% no-repeat;
+    width: 48px;
   }
 
   &__tool--contrast {
-    background: url("../../img/icon-editor-contrast.svg") 50% 50% no-repeat;
+    width: 36px;
   }
 
   &__options {
@@ -47,7 +63,8 @@
     &__tools {
       display: flex;
       flex-direction: column;
-      margin-bottom: 0;
+      margin: 0;
+      padding: 0;
     }
 
     &__tool {
@@ -57,6 +74,17 @@
       margin-right: 0;
       background-size: 24px 23px;
       border-bottom: 1px solid $color-darkgray;
+    }
+
+    &__tool-icon {
+      width: 24px;
+      height: 24px;
+      fill: $color-pink;
+    }
+
+    &__tool-icon--contrast {
+      width: 16px;
+      height: 16px;
     }
 
     &__tool--contrast {
@@ -73,7 +101,7 @@
       align-items: center;
       height: 73px;
       padding-left: 31px;
-      padding-right: 5px;
+      padding-right: 6px;
       border-bottom: 1px solid $color-darkgray;
     }
 
@@ -88,6 +116,16 @@
   .editor {
     &__tool {
       width: 49px;
+    }
+
+    &__tool-icon {
+      width: 47px;
+      height: 50px;
+    }
+
+    &__tool-icon--contrast {
+      width: 33px;
+      height: 33px;
     }
 
     &__options {

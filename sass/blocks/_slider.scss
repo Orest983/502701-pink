@@ -17,10 +17,20 @@
     margin: 0 5px;
     border-radius: 50%;
     border: 3px solid $color-white;
-    background-color: $color-darkergray;
+    background-color: $color-darkgray;
     text-indent: -50px;
     overflow: hidden;
     cursor: pointer;
+  }
+
+  &__toggle:hover {
+    background-color: $color-darkergray;
+    border: 3px solid $color-white;
+  }
+
+  &__toggle:active {
+    background-color: $color-lightgray;
+    border: 3px solid $color-white;
   }
 
   &__toggle--lightgrey {
@@ -57,6 +67,7 @@
       width: 30px;
       height: 42px;
       border: none;
+      background: none;
       cursor: pointer;
     }
 
@@ -66,6 +77,18 @@
 
     &__control--next {
       right: 0;
+    }
+
+    &__control-icon {
+      fill: $color-darkgray;
+    }
+
+    &__control-icon:hover {
+      fill: $color-darkergray;
+    }
+
+    &__control-icon:active {
+      fill: $color-lightgray;
     }
   }
 }

@@ -185,15 +185,15 @@
   }
 
   &__checkbox:checked ~ .form__label--checkbox::after {
-    top: 12px;
-    left: 12px;
-    position: absolute;
     content: "";
+    position: absolute;
+    top: 11px;
+    left: 9px;
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: $color-pink;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/icon-checkbox.svg");
+    background-repeat: no-repeat;
   }
 
   &__label--checkbox::before {
@@ -220,10 +220,23 @@
     color: $color-darkblue;
   }
 
+  &__input:hover {
+    border: 2px solid $color-darkblue;
+  }
+
+  &__input:active,
+  &__input:focus {
+    border: 2px solid $color-pink;
+  }
+
   &__input::placeholder {
     font-family: $font-primary;
     font-size: 18px;
     color: $color-darkblue;
+  }
+
+  &__input-aside {
+    display: none;
   }
 
   &__textarea {
@@ -238,6 +251,16 @@
     border: 2px solid $color-darkgray;
     border-radius: 2px;
     color: $color-darkblue;
+    resize: vertical;
+  }
+
+  &__textarea:hover {
+    border: 2px solid $color-darkblue;
+  }
+
+  &__textarea:active,
+  &__textarea:focus {
+    border: 2px solid $color-pink;
   }
 
   &__btn {
@@ -251,8 +274,21 @@
     text-transform: uppercase;
     border: none;
     border-radius: 2px;
-    background-color: $color-green;
+    background-color: $color-btn-green-bg;
     color: $color-white;
+    cursor: pointer;
+  }
+
+  &__btn:hover {
+    background-color: $color-btn-green-bg--hover;
+  }
+
+  &__btn:active {
+    color: $color-btn-green-text--active;
+  }
+
+  &__btn:disabled {
+    background-color: $color-btn-green-bg--disabled;
   }
 
   &__notice {
@@ -325,13 +361,19 @@
       border-bottom-right-radius: 0;
     }
 
-    &__input-icon {
-      display: inline-block;
+    &__input-aside {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 62px;
       height: 63px;
       border-top-right-radius: 2px;
       border-bottom-right-radius: 2px;
       background-color: $color-darkgray;
+    }
+
+    &__input-icon {
+      fill: $color-pink;
     }
 
     &__textarea {
@@ -440,33 +482,41 @@
 
 @media (min-width: $bp-desktop) {
   .form {
-    outline: 1px solid red;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: $inner-desktop;
     margin: 0 auto;
+    padding-bottom: 0;
 
     &__block {
       width: 100%;
     }
 
     &__block--person {
-      width: 470px;
+      width: 436px;
+      padding-bottom: 24px;
+    }
+
+    &__block--textarea {
+      padding-bottom: 66px;
     }
 
     &__block--app {
       width: 436px;
       padding-top: 0;
+      padding-bottom: 0;
     }
 
     &__block-inner {
       width: 820px;
+      padding-right: 0;
       padding-left: 0;
     }
 
     &__block-inner--app {
       width: 436px;
+      padding-left: 75px;
     }
 
     &__block-inner--contact {
@@ -474,16 +524,31 @@
       justify-content: space-between;
       width: 820px;
       padding-left: 0;
-    }
-
-    &__block-inner--person {
-      width: 470px;
+      padding-bottom: 14px;
     }
 
     &__block-inner--progress {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
+      padding-bottom: 11px;
+    }
+
+    &__block-inner--textarea {
+      padding-bottom: 40px;
+    }
+
+    &__block-inner--person {
+      width: 436px;
+      padding-top: 13px;
+    }
+
+    &__block-inner--submit {
+      width: 100%;
+    }
+
+    &__group--person {
+      margin-bottom: 53px;
     }
 
     &__group--contacts {
@@ -530,12 +595,16 @@
       margin-bottom: 33px;
     }
 
-    &__input-icon {
+    &__input-aside {
       width: 84px;
     }
 
     &__label--checkbox {
       padding-left: 60px;
+    }
+
+    &__textarea {
+      height: 126px;
     }
   }
 }
