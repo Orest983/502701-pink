@@ -279,7 +279,7 @@
       <section class="upload">
         <div class="upload__inner">
           <h2 class="visually-hidden upload__title">Загрузить фото</h2>
-          <form class="upload__form" action="index.html" method="post" enctype="multipart/form-data">
+          <form class="upload__form" class="form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
             <div class="upload__img-wrap">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
@@ -314,13 +314,13 @@
                 </div>
                 <div class="editor__options">
                   <div class="editor__option editor__option--crop">
-                    <input class="input-range" type="range" value="100">
+                    <input class="input-range" type="range" name="crop" value="100">
                   </div>
                   <div class="editor__option editor__option--fill">
-                    <input class="input-range" type="range" value="100">
+                    <input class="input-range" type="range" name="fill" value="100">
                   </div>
                   <div class="editor__option editor__option--contrast">
-                    <input class="input-range" type="range" value="100">
+                    <input class="input-range" type="range" name="contrast" value="100">
                   </div>
                 </div>
               </div>
