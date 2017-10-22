@@ -279,6 +279,10 @@
     text-align: center;
   }
 
+  &__notice-hidden-text {
+    display: none;
+  }
+
   &__notice-star {
     color: $color-pink;
   }
@@ -585,6 +589,10 @@
 
     &__textarea {
       height: 126px;
+    }
+
+    &__notice-hidden-text {
+      display: inline-block;
     }
   }
 }

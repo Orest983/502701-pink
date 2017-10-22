@@ -14,11 +14,11 @@
     fill: $color-pink;
   }
 
-  &__icon:hover {
+  &__link:hover &__icon {
     fill: $color-darkblue;
   }
 
-  &__icon:active {
+  &__link:active &__icon {
     fill: $color-darkergray;
   }
 }
