@@ -264,31 +264,11 @@
   }
 
   &__btn {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
     height: 61px;
-    font-size: 18px;
-    font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
     border: none;
     border-radius: 2px;
-    background-color: $color-btn-green-bg;
-    color: $color-white;
-    cursor: pointer;
-  }
-
-  &__btn:hover {
-    background-color: $color-btn-green-bg--hover;
-  }
-
-  &__btn:active {
-    color: $color-btn-green-text--active;
-  }
-
-  &__btn:disabled {
-    background-color: $color-btn-green-bg--disabled;
   }
 
   &__notice {
@@ -297,6 +277,10 @@
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  &__notice-hidden-text {
+    display: none;
   }
 
   &__notice-star {
@@ -605,6 +589,10 @@
 
     &__textarea {
       height: 126px;
+    }
+
+    &__notice-hidden-text {
+      display: inline-block;
     }
   }
 }

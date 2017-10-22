@@ -33,14 +33,14 @@ $bp-mobile: 320px;
 $bp-tablet: 660px;
 $bp-desktop: 960px;
 
-// retino media expression
-$retina-dpi: 144dpi;
-$retina-dppx: 1.5dppx;
-
 // inner width brakepoints
 $inner-mobile: 280px;
 $inner-tablet: 620px;
 $inner-desktop: 940px;
+
+// retina media expression
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 // fonts
 $font-primary: "opensans", "arial", sans-serif;
