@@ -7,6 +7,10 @@
     background-color: $color-darkblue;
   }
 
+  &__nav {
+    // width: 700px;
+  }
+
   &__inner {
     display: flex;
     align-items: center;
@@ -16,9 +20,25 @@
     margin: 0 auto;
   }
 
-  &__logo {
-    display: block;
-    height: 22px;
+  &__icon {
+    fill: $color-white;
+  }
+
+  &__icon:hover {
+    fill: $color-pink;
+  }
+
+  &__icon:active {
+    fill: $color-white;
+    opacity: 0.3;
+  }
+
+  &__icon--tablet {
+    display: none;
+  }
+
+  &__icon--desktop {
+    display: none;
   }
 }
 
@@ -28,6 +48,19 @@
       width: $inner-tablet;
       height: 110px;
     }
+
+    &__logo {
+      margin-top: -17px;
+    }
+
+    &__icon--mobile {
+      display: none;
+    }
+
+    &__icon--tablet {
+      display: block;
+      fill: $color-white;
+    }
   }
 }
 
@@ -35,6 +68,19 @@
   .page-header {
     &__inner {
       width: $inner-desktop;
+    }
+
+    // &__nav {
+    //   width: 700px;
+    //   height: 65px;
+    // }
+
+    &__icon--tablet {
+      display: none;
+    }
+
+    &__icon--desktop {
+      display: block;
     }
   }
 }

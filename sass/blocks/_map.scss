@@ -1,8 +1,9 @@
 .map {
-  width: 100%;
+  position: relative;
+  width: $bp-mobile;
   height: 200px;
   margin: 0 auto;
-  margin-top: -34px;
+  // margin-top: -34px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-position: 50% 0;
   background-size: 320px 421px;
@@ -13,13 +14,31 @@
     background-size: 320px 421px;
     background-repeat: no-repeat;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    display: block;
+    width: 100%;
+    height: 37px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -26px;
+  }
+
+  &__marker {
+    position: absolute;
+    top: 48%;
+    left: 44%;
+  }
 }
 
 @media (min-width: $bp-tablet) {
   .map {
+    width: $bp-tablet;
     height: 377px;
-    margin-top: -112px;
-
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-position: 50% 0;
     background-size: 700px 848px;
@@ -30,13 +49,25 @@
       background-size: 700px 848px;
       background-repeat: no-repeat;
     }
+
+    &::before {
+      height: 85px;
+      background-size: cover;
+      background-position-y: -13px;
+    }
+
+    &__marker {
+      top: 52%;
+      left: 47%;
+    }
   }
 }
 
 @media (min-width: $bp-desktop) {
   .map {
+    width: $bp-desktop;
+    margin: 0 auto;
     height: 477px;
-    margin-top: -151px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-position: 50% 0;
     background-size: 1200px 976px;
@@ -46,6 +77,16 @@
       background-image: url("../img/bg-map-desktop@2x.jpg");
       background-size: 1200px 976px;
       background-repeat: no-repeat;
+    }
+
+    &::before {
+      height: 125px;
+      background-position-y: -15px;
+    }
+
+    &__marker {
+      top: 50%;
+      left: 49%;
     }
   }
 }

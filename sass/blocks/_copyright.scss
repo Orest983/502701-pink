@@ -1,6 +1,7 @@
 .copyright {
   &__link {
     display: flex;
+    align-items: center;
     height: 40px;
     line-height: 40px;
     font-size: 14px;
@@ -8,11 +9,17 @@
     color: $color-darkblue;
   }
 
-  &__link::after {
-    width: 27px;
-    margin-left: 15px;
-    content: " ";
-    background: url("../img/logo-htmlacademy.svg") 50% 50% no-repeat;
+  &__icon {
+    margin-left: 13px;
+    fill: $color-pink;
+  }
+
+  &__icon:hover {
+    fill: $color-darkblue;
+  }
+
+  &__icon:active {
+    fill: $color-darkergray;
   }
 }
 

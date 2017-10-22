@@ -15,6 +15,16 @@
     margin-bottom: 30px;
   }
 
+  &__btn:hover {
+    background-color: $color-white;
+    color: $color-pink;
+  }
+
+  &__btn:active {
+    background-color: $color-white;
+    color: $color-lightpink;
+  }
+
   &__list {
     @include ul-reset();
     display: flex;

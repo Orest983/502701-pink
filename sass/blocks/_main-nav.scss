@@ -6,9 +6,9 @@
     font-size: 0;
     border: none;
     background: none;
-    //background: url("../img/icon-menu-burger.svg") 50% 50% no-repeat;
     cursor: pointer;
   }
+
 
   &__toggle::before {
     position: absolute;
@@ -21,6 +21,16 @@
     box-shadow: 0 10px 0 0 $color-white, 0 20px 0 0 $color-white;
   }
 
+  &__toggle:hover::before {
+    background-color: $color-pink;
+    box-shadow: 0 10px 0 0 $color-pink, 0 20px 0 0 $color-pink;
+  }
+
+  &__toggle:active::before {
+    background-color: $color-purple;
+    box-shadow: 0 10px 0 0 $color-purple, 0 20px 0 0 $color-purple;
+  }
+
   &__toggle--closed::after,
   &__toggle--closed::before {
     position: absolute;
@@ -30,6 +40,18 @@
     width: 22px;
     height: 3px;
     background-color: $color-white;
+    box-shadow: none;
+  }
+
+  &__toggle--closed:hover::after,
+  &__toggle--closed:hover::before {
+    background-color: $color-pink;
+    box-shadow: none;
+  }
+
+  &__toggle--closed:active::after,
+  &__toggle--closed:active::before {
+    background-color: $color-purple;
     box-shadow: none;
   }
 
@@ -61,7 +83,7 @@
 @media (min-width: $bp-desktop) {
   .main-nav {
     &__inner {
-      position: initial;
+      position: static;
       width: 620px;
     }
 

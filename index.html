@@ -11,12 +11,20 @@
   </head>
   <body>
     <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
+      <include src="img/sprite.svg"></include>
     </div>
     <header class="page-header">
       <div class="page-header__inner">
         <a class="page-header__logo" href="/">
-          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          <svg class="page-header__icon page-header__icon--mobile" width="75" height="22">
+            <use xlink:href="#icon-pink-white-mobile" />
+          </svg>
+          <svg class="page-header__icon page-header__icon--tablet" width="147" height="40">
+            <use xlink:href="#icon-pink-white-tablet" />
+          </svg>
+          <svg class="page-header__icon page-header__icon--desktop" width="147" height="40">
+            <use xlink:href="#icon-pink-white-desktop" />
+          </svg>
         </a>
         <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -50,9 +58,7 @@
     <main class="page-main">
       <section class="post-header">
         <div class="post-header__inner post-header__inner--background">
-          <!-- <div class="post-header__background"> -->
-            <h1 class="visually-hidden">Мобильное приложение Pink</h1>
-          <!-- </div> -->
+          <h1 class="visually-hidden">Мобильное приложение Pink</h1>
           <section class="post-header__download download">
             <div class="download__inner">
               <h2 class="visually-hidden download__title">Взгляните<br>на жизнь<br>иначе!</h2>
@@ -168,8 +174,16 @@
             </blockquote>
           </div>
           <div class="reviews__controls slider__controls">
-            <button class="slider__control slider__control--prev" type="button"><</button>
-            <button class="slider__control slider__control--next" type="button">></button>
+            <button class="slider__control slider__control--prev" type="button">
+              <svg class="slider__control-icon" width="23" height="41">
+                <use xlink:href="#icon-review-arrow-left" />
+              </svg>
+            </button>
+            <button class="slider__control slider__control--next" type="button">
+              <svg class="slider__control-icon" width="23" height="41">
+                <use xlink:href="#icon-review-arrow-right" />
+              </svg>
+            </button>
           </div>
           <div class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--active" type="button">1</button>
@@ -183,9 +197,7 @@
           <h2 class="visually-hidden prices__title">Тарифы</h2>
           <ul class="prices__list slider__list">
             <li class="prices__item slider__item">
-              <div class="prices__header prices__header--blank">
-
-              </div>
+              <div class="prices__header prices__header--blank"></div>
               <ul class="prices__features-list">
                 <li class="prices__feature"><span class="prices__feature-text">Розовый фильтр</span></li>
                 <li class="prices__feature"><span class="prices__feature-text">Смайлики</span></li>
@@ -193,14 +205,29 @@
               </ul>
             </li>
             <li class="prices__item slider__item">
-              <div class="prices__header prices__header--hit">
+              <div class="prices__header">
                 <h3 class="prices__header-title">База</h3>
                 <p class="prices__cost">1,99 <span class="prices__currency">USD</span></p>
               </div>
               <ul class="prices__features-list">
-                <li class="prices__feature prices__feature--active"><span class="prices__feature-text">Розовый фильтр</span></li>
-                <li class="prices__feature prices__feature--active"><span class="prices__feature-text">Смайлики</span></li>
-                <li class="prices__feature"><span class="prices__feature-text">Комментарии</span></li>
+                <li class="prices__feature">
+                  <span class="prices__feature-text">Розовый фильтр</span>
+                  <svg class="prices__feature-icon prices__feature-icon--yes" width="31" height="21">
+                    <use xlink:href="#icon-yes" />
+                  </svg>
+                </li>
+                <li class="prices__feature">
+                  <span class="prices__feature-text">Смайлики</span>
+                  <svg class="prices__feature-icon prices__feature-icon--no" width="28" height="26">
+                    <use xlink:href="#icon-no" />
+                  </svg>
+                </li>
+                <li class="prices__feature">
+                  <span class="prices__feature-text">Комментарии</span>
+                  <svg class="prices__feature-icon prices__feature-icon--no" width="28" height="26">
+                    <use xlink:href="#icon-no" />
+                  </svg>
+                </li>
               </ul>
             </li>
             <li class="prices__item slider__item">
@@ -209,20 +236,50 @@
                 <p class="prices__cost">3,99 <span class="prices__currency">USD</span></p>
               </div>
               <ul class="prices__features-list">
-                <li class="prices__feature prices__feature--active"><span class="prices__feature-text">Розовый фильтр</span></li>
-                <li class="prices__feature prices__feature--active"><span class="prices__feature-text">Смайлики</span></li>
-                <li class="prices__feature"><span class="prices__feature-text">Комментарии</span></li>
+                <li class="prices__feature">
+                  <span class="prices__feature-text">Розовый фильтр</span>
+                  <svg class="prices__feature-icon prices__feature-icon--yes" width="31" height="21">
+                    <use xlink:href="#icon-yes" />
+                  </svg>
+                </li>
+                <li class="prices__feature">
+                  <span class="prices__feature-text">Смайлики</span>
+                  <svg class="prices__feature-icon prices__feature-icon--yes" width="31" height="21">
+                    <use xlink:href="#icon-yes" />
+                  </svg>
+                </li>
+                <li class="prices__feature">
+                  <span class="prices__feature-text">Комментарии</span>
+                  <svg class="prices__feature-icon prices__feature-icon--no" width="28" height="26">
+                    <use xlink:href="#icon-no" />
+                  </svg>
+                </li>
               </ul>
             </li>
             <li class="prices__item slider__item">
-              <div class="prices__header prices__header--hit">
+              <div class="prices__header">
                 <h3 class="prices__header-title">Анлим</h3>
                 <p class="prices__cost">9,99 <span class="prices__currency">USD</span></p>
               </div>
               <ul class="prices__features-list">
-                <li class="prices__feature prices__feature--active"><span class="prices__feature-text">Розовый фильтр</span></li>
-                <li class="prices__feature prices__feature--active"><span class="prices__feature-text">Смайлики</span></li>
-                <li class="prices__feature"><span class="prices__feature-text">Комментарии</span></li>
+                <li class="prices__feature">
+                  <span class="prices__feature-text">Розовый фильтр</span>
+                  <svg class="prices__feature-icon prices__feature-icon--yes" width="31" height="21">
+                    <use xlink:href="#icon-yes" />
+                  </svg>
+                </li>
+                <li class="prices__feature">
+                  <span class="prices__feature-text">Смайлики</span>
+                  <svg class="prices__feature-icon prices__feature-icon--yes" width="31" height="21">
+                    <use xlink:href="#icon-yes" />
+                  </svg>
+                </li>
+                <li class="prices__feature">
+                  <span class="prices__feature-text">Комментарии</span>
+                  <svg class="prices__feature-icon prices__feature-icon--yes" width="31" height="21">
+                    <use xlink:href="#icon-yes" />
+                  </svg>
+                </li>
               </ul>
             </li>
           </ul>
@@ -241,11 +298,11 @@
           <div class="contacts__list">
             <div class="contacts__item">
               <h3 class="contacts__item-title">Звоните:</h3>
-              <a class="contacts__info" href="mailto:mail@htmlacademy.ru">+7 (812) 555-66-66</a>
+              <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </div>
             <div class="contacts__item">
               <h3 class="contacts__item-title">Пишите:</h3>
-              <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts__info contacts__info--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
             <div class="contacts__item">
               <h3 class="contacts__item-title">Приезжайте в гости:</h3>
@@ -254,31 +311,62 @@
           </div>
         </div>
       </section>
-      <div id="map" class="map"></div>
+      <div id="map" class="map">
+        <div class="map__marker">
+          <svg class="map__marker-icon" width="36" height="36">
+            <use xlink:href="#icon-map-marker" />
+          </svg>
+        </div>
+      </div>
     </main>
     <footer class="page-footer page-footer--xs-hidden">
       <div class="page-footer__inner">
         <a class="page-footer__logo" href="/">
-          <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Pink">
+          <svg class="page-footer__icon page-footer__icon--mobile" width="147" height="40">
+            <use xlink:href="#icon-pink-blue-mobile" />
+          </svg>
+          <svg class="page-footer__icon page-footer__icon--desktop" width="147" height="40">
+            <use xlink:href="#icon-pink-blue-desktop" />
+          </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Twitter</a>
+              <a class="social__link social__link--twitter" href="#">
+                <svg class="social__icon" width="19" height="19">
+                  <use xlink:href="#icon-twitter" />
+                </svg>
+                Twitter
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Facebook</a>
+              <a class="social__link social__link--facebook" href="#">
+                <svg class="social__icon" width="8" height="18">
+                  <use xlink:href="#icon-facebook" />
+                </svg>
+                Facebook
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Youtube</a>
+              <a class="social__link social__link--youtube" href="#">
+                <svg class="social__icon" width="15" height="13">
+                  <use xlink:href="#icon-youtube" />
+                </svg>
+                Youtube
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="#">Разработано</a>
+          <a class="copyright__link" href="https://htmlacademy.ru">Разработано
+            <svg class="copyright__icon" width="27" height="34">
+              <use xlink:href="#icon-htmlacademy" />
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
