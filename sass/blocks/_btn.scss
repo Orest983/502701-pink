@@ -11,6 +11,7 @@
   font-size: 18px;
   line-height: 49px;
   background: transparent;
+  cursor: pointer;
 
   &--pink {
     border: 3px solid $color-pink;
@@ -41,4 +42,20 @@
     color: $color-btn-gray-text--active;
   }
 
+  &--green {
+    background-color: $color-btn-green-bg;
+    color: $color-white;
+  }
+
+  &--green:hover {
+    background-color: $color-btn-green-bg--hover;
+  }
+
+  &--green:active {
+    color: $color-btn-green-text--active;
+  }
+
+  &--green:disabled {
+    background-color: $color-btn-green-bg--disabled;
+  }
 }
