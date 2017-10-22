@@ -90,6 +90,5 @@ gulp.task("clean", function() {
 });
 
 gulp.task("build", function(done) {
-  run("clean", "copy", "style", "sprite", "html", "webp", done);
-  //run("clean", "copy", "style", "sprite", "html", done);
+  run("clean", "copy", "style", "sprite", "html", "webp", "images", done);
 });
