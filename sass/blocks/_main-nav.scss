@@ -1,94 +1,87 @@
-.main-nav {
-  &__toggle {
-    position: relative;
-    width: 50px;
-    height: 66px;
-    font-size: 0;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
+.main-nav__toggle {
+  position: relative;
+  width: 50px;
+  height: 66px;
+  font-size: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 
+.main-nav__toggle::before {
+  position: absolute;
+  top: 21px;
+  left: 0;
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: $color-white;
+  box-shadow: 0 10px 0 0 $color-white, 0 20px 0 0 $color-white;
+}
 
-  &__toggle::before {
-    position: absolute;
-    top: 21px;
-    left: 0;
-    content: "";
-    width: 50px;
-    height: 4px;
-    background-color: $color-white;
-    box-shadow: 0 10px 0 0 $color-white, 0 20px 0 0 $color-white;
-  }
+.main-nav__toggle:hover::before {
+  background-color: $color-pink;
+  box-shadow: 0 10px 0 0 $color-pink, 0 20px 0 0 $color-pink;
+}
 
-  &__toggle:hover::before {
-    background-color: $color-pink;
-    box-shadow: 0 10px 0 0 $color-pink, 0 20px 0 0 $color-pink;
-  }
+.main-nav__toggle:active::before {
+  background-color: $color-purple;
+  box-shadow: 0 10px 0 0 $color-purple, 0 20px 0 0 $color-purple;
+}
 
-  &__toggle:active::before {
-    background-color: $color-purple;
-    box-shadow: 0 10px 0 0 $color-purple, 0 20px 0 0 $color-purple;
-  }
+.main-nav__toggle--closed::after,
+.main-nav__toggle--closed::before {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  content: "";
+  width: 22px;
+  height: 3px;
+  background-color: $color-white;
+  box-shadow: none;
+}
 
-  &__toggle--closed::after,
-  &__toggle--closed::before {
-    position: absolute;
-    top: 30px;
-    left: 15px;
-    content: "";
-    width: 22px;
-    height: 3px;
-    background-color: $color-white;
-    box-shadow: none;
-  }
+.main-nav__toggle--closed:hover::after,
+.main-nav__toggle--closed:hover::before {
+  background-color: $color-pink;
+  box-shadow: none;
+}
 
-  &__toggle--closed:hover::after,
-  &__toggle--closed:hover::before {
-    background-color: $color-pink;
-    box-shadow: none;
-  }
+.main-nav__toggle--closed:active::after,
+.main-nav__toggle--closed:active::before {
+  background-color: $color-purple;
+  box-shadow: none;
+}
 
-  &__toggle--closed:active::after,
-  &__toggle--closed:active::before {
-    background-color: $color-purple;
-    box-shadow: none;
-  }
+.main-nav__toggle--closed::after {
+  transform: rotate(-45deg);
+}
 
-  &__toggle--closed::after {
-    transform: rotate(-45deg);
-  }
+.main-nav__toggle--closed::before {
+  transform: rotate(45deg);
+}
 
-  &__toggle--closed::before {
-    transform: rotate(45deg);
-  }
-
-  &__inner {
-    position: absolute;
-    top: 66px;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-  }
+.main-nav__inner {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 }
 
 @media (min-width: $bp-tablet) {
-  .main-nav {
-    &__inner {
-      top: 110px;
-    }
+  .main-nav__inner {
+    top: 110px;
   }
 }
 
 @media (min-width: $bp-desktop) {
-  .main-nav {
-    &__inner {
-      position: static;
-      width: 620px;
-    }
+  .main-nav__inner {
+    position: static;
+    width: 620px;
+  }
 
-    &__toggle {
-      display: none;
-    }
+  .main-nav__toggle {
+    display: none;
   }
 }

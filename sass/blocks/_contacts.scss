@@ -1,113 +1,113 @@
 .contacts {
   padding-top: 45px;
+}
 
-  &__inner {
-    width: $inner-mobile;
-    margin: 0 auto;
-  }
+.contacts__inner {
+  width: $inner-mobile;
+  margin: 0 auto;
+}
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 42px;
-  }
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 42px;
+}
 
-  &__text {
-    margin: 0;
-    text-align: center;
-    font-weight: 300;
-    font-size: 24px;
-    color: $color-darkblue;
-  }
+.contacts__text {
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  color: $color-darkblue;
+}
 
-  &__text--last {
-    margin-bottom: 37px;
-  }
+.contacts__text--last {
+  margin-bottom: 37px;
+}
 
-  &__item {
-    margin-bottom: 27px;
-  }
+.contacts__item {
+  margin-bottom: 27px;
+}
 
-  &__item:last-child {
-    margin-bottom: 0;
-  }
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
 
-  &__item-title {
-    margin: 0;
-    margin-bottom: 4px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 18px;
-    color: $color-darkblue;
-  }
+.contacts__item-title {
+  margin: 0;
+  margin-bottom: 4px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: $color-darkblue;
+}
 
-  &__info {
-    display: block;
-    margin: 0;
-    text-align: center;
-    font-weight: 300;
-    font-size: 24px;
-    color: $color-pink;
-    text-decoration: none;
-  }
+.contacts__info {
+  display: block;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  color: $color-pink;
+  text-decoration: none;
+}
 
-  &__info--email:hover {
-    color: $color-darkblue;
-    text-decoration: underline;
-  }
+.contacts__info--email:hover {
+  color: $color-darkblue;
+  text-decoration: underline;
+}
 
-  &__info--email:active {
-    color: $color-darkgray;
-    text-decoration: none;
-  }
+.contacts__info--email:active {
+  color: $color-darkgray;
+  text-decoration: none;
 }
 
 @media (min-width: $bp-tablet) {
   .contacts {
     padding-bottom: 0;
+  }
 
-    &__inner {
-      width: $inner-tablet;
-    }
+  .contacts__inner {
+    width: $inner-tablet;
+  }
 
-    &__list {
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding-bottom: 24px;
-    }
+  .contacts__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 24px;
+  }
 
-    &__item {
-      width: 300px;
-      margin-bottom: 50px;
-    }
+  .contacts__item {
+    width: 300px;
+    margin-bottom: 50px;
+  }
 
-    &__item br {
-      display: initial;
-    }
+  .contacts__item br {
+    display: initial;
+  }
 
-    &__item-title {
-      margin-bottom: 7px;
-    }
+  .contacts__item-title {
+    margin-bottom: 7px;
+  }
 
-    &__info {
-      line-height: 29px;
-    }
+  .contacts__info {
+    line-height: 29px;
+  }
 
-    &__item:nth-child(3) {
-      margin: 0 auto;
-      flex-grow: 1;
-    }
+  .contacts__item:nth-child(3) {
+    margin: 0 auto;
+    flex-grow: 1;
+  }
 
-    &__text {
-      font-size: 40px;
-      line-height: 48px;
-    }
+  .contacts__text {
+    font-size: 40px;
+    line-height: 48px;
+  }
 
-    &__text--last {
-      margin-bottom: 45px;
-    }
+  .contacts__text--last {
+    margin-bottom: 45px;
   }
 }
 
@@ -115,35 +115,35 @@
   .contacts {
     padding-top: 71px;
     padding-bottom: 26px;
+  }
 
-    &__inner {
-      width: $inner-desktop;
-    }
+  .contacts__inner {
+    width: $inner-desktop;
+  }
 
-    &__list {
-      align-items: flex-start;
-      padding-bottom: 0;
-    }
+  .contacts__list {
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
 
-    &__text {
-      margin-bottom: 12px;
-      font-size: 50px;
-    }
+  .contacts__text {
+    margin-bottom: 12px;
+    font-size: 50px;
+  }
 
-    &__text--last {
-      margin-bottom: 64px;
-    }
+  .contacts__text--last {
+    margin-bottom: 64px;
+  }
 
-    &__item:nth-child(2) {
-      order: 2;
-    }
+  .contacts__item:nth-child(2) {
+    order: 2;
+  }
 
-    &__item:nth-child(3) {
-      order: 1;
-    }
+  .contacts__item:nth-child(3) {
+    order: 1;
+  }
 
-    &__item-title {
-      margin-bottom: 25px;
-    }
+  .contacts__item-title {
+    margin-bottom: 25px;
   }
 }

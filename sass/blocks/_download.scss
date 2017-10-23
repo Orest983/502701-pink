@@ -2,71 +2,71 @@
   padding-top: 28px;
   padding-bottom: 30px;
   background-color: $color-darkerblue;
+}
 
-  &__inner {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: $inner-mobile;
-    margin: 0 auto;
-  }
+.download__inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: $inner-mobile;
+  margin: 0 auto;
+}
 
-  &__btn {
-    margin-bottom: 30px;
-  }
+.download__btn {
+  margin-bottom: 30px;
+}
 
-  &__btn:hover {
-    background-color: $color-white;
-    color: $color-pink;
-  }
+.download__btn:hover {
+  background-color: $color-white;
+  color: $color-pink;
+}
 
-  &__btn:active {
-    background-color: $color-white;
-    color: $color-lightpink;
-  }
+.download__btn:active {
+  background-color: $color-white;
+  color: $color-lightpink;
+}
 
-  &__list {
-    @include ul-reset();
-    display: flex;
-    margin-bottom: 20px;
-  }
+.download__list {
+  @include ul-reset();
+  display: flex;
+  margin-bottom: 20px;
+}
 
-  &__item {
-    margin-right: 30px;
-  }
+.download__item {
+  margin-right: 30px;
+}
 
-  &__item:last-child {
-    margin-right: 0;
-  }
+.download__item:last-child {
+  margin-right: 0;
+}
 
-  &__link {
-    display: block;
-    width: 50px;
-    height: 60px;
-    font-size: 0;
-    text-decoration: none;
-  }
+.download__link {
+  display: block;
+  width: 50px;
+  height: 60px;
+  font-size: 0;
+  text-decoration: none;
+}
 
-  &__link--apple {
-    background: url("../img/logo-apple.svg") 50% 50% no-repeat;
-  }
+.download__link--apple {
+  background: url("../img/logo-apple.svg") 50% 50% no-repeat;
+}
 
-  &__link--android {
-    background: url("../img/logo-android.svg") 50% 71% no-repeat;
-  }
+.download__link--android {
+  background: url("../img/logo-android.svg") 50% 71% no-repeat;
+}
 
-  &__link--windows {
-    background: url("../img/logo-microsoft.svg") 50% 71% no-repeat;
-  }
+.download__link--windows {
+  background: url("../img/logo-microsoft.svg") 50% 71% no-repeat;
+}
 
-  &__text {
-    margin: 0;
-    color: $color-white;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-  }
+.download__text {
+  margin: 0;
+  color: $color-white;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
 }
 
 @media (min-width: $bp-tablet) {
@@ -74,50 +74,48 @@
     padding-top: 0;
     padding-bottom: 0;
     background-color: transparent;
+  }
 
-    &__title {
-      margin-bottom: 29px;
-      visibility: visible;
-      line-height: 50px;
-      text-align: center;
-      font-size: 40px;
-      font-weight: 300;
-      color: $color-white;
-    }
+  .download__title {
+    margin-bottom: 29px;
+    visibility: visible;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    color: $color-white;
+  }
 
-    &__text {
-      font-size: 18px;
-    }
+  .download__text {
+    font-size: 18px;
+  }
 
-    &__inner {
-      width: 300px;
-    }
+  .download__inner {
+    width: 300px;
+  }
 
-    &__list {
-      margin-bottom: 32px;
-    }
+  .download__list {
+    margin-bottom: 32px;
+  }
 
-    &__btn {
-      margin-bottom: 45px;
-    }
+  .download__btn {
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: $bp-desktop) {
-  .download {
-    &__title {
-      margin-bottom: 50px;
-      font-size: 50px;
-      line-height: 61px;
-    }
+  .download__title {
+    margin-bottom: 50px;
+    font-size: 50px;
+    line-height: 61px;
+  }
 
-    &__list {
-      margin-bottom: 53px;
-    }
+  .download__list {
+    margin-bottom: 53px;
+  }
 
-    &__btn {
-      margin-bottom: 65px;
-      font-size: 21px;
-    }
+  .download__btn {
+    margin-bottom: 65px;
+    font-size: 21px;
   }
 }

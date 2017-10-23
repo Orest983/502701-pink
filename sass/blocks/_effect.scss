@@ -7,72 +7,72 @@
     display: block;
     padding-top: 59px;
     padding-bottom: 59px;
+  }
 
-    &__inner {
-      width: $inner-tablet;
-      margin: 0 auto;
-    }
+  .effect__inner {
+    width: $inner-tablet;
+    margin: 0 auto;
+  }
 
-    &__content {
-      display: flex;
-      align-items: center;
-    }
+  .effect__content {
+    display: flex;
+    align-items: center;
+  }
 
-    &__clock {
-      position: relative;
-      width: 238px;
-      height: 275px;
-      margin-right: 71px;
-      background-image: url("../img/icon-timer.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+  .effect__clock {
+    position: relative;
+    width: 238px;
+    height: 275px;
+    margin-right: 71px;
+    background-image: url("../img/icon-timer.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
-    &__clock-inside {
-      position: absolute;
-      left: 18px;
-      top: 55px;
-      display: flex;
-      justify-content: center;
-      box-sizing: border-box;
-      width: 202px;
-      height: 202px;
-      border: 13px solid $color-pink;
-      border-radius: 50%;
-      font-size: 96px;
-      font-weight: 700;
-      line-height: 162px;
-      color: $color-pink;
-      text-align: center;
-    }
+  .effect__clock-inside {
+    position: absolute;
+    left: 18px;
+    top: 55px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 202px;
+    height: 202px;
+    border: 13px solid $color-pink;
+    border-radius: 50%;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 162px;
+    color: $color-pink;
+    text-align: center;
+  }
 
-    &__description {
-      margin-top: 10px;
-      width: 310px;
-    }
+  .effect__description {
+    margin-top: 10px;
+    width: 310px;
+  }
 
-    &__title {
-      margin: 0;
-      margin-bottom: 10px;
-      width: 170px;
-      font-size: 30px;
-      line-height: 36px;
-      font-weight: 700;
-    }
+  .effect__title {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 170px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
 
-    &__text {
-      margin: 0;
-      margin-bottom: 10px;
-      font-size: 14px;
-      line-height: 24px;
-      color: $color-darkerblue;
-    }
+  .effect__text {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-darkerblue;
+  }
 
-    &__link {
-      font-size: 14px;
-      line-height: 24px;
-      color: $color-pink;
-    }
+  .effect__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-pink;
   }
 }
 
@@ -80,55 +80,55 @@
   .effect {
     padding-bottom: 52px;
     background-color: $color-lightgray;
+  }
 
-    &__inner {
-      width: $inner-desktop;
-    }
+  .effect__inner {
+    width: $inner-desktop;
+  }
 
-    &__clock {
-      width: 302px;
-      height: 361px;
-      margin-right: 64px;
-      background-size: 300px 346px;
-    }
+  .effect__clock {
+    width: 302px;
+    height: 361px;
+    margin-right: 64px;
+    background-size: 300px 346px;
+  }
 
-    &__clock-inside {
-      left: 22px;
-      top: 70px;
-      width: 253px;
-      height: 253px;
-      border: 17px solid $color-pink;
-      font-size: 120px;
-      line-height: 206px;
-    }
+  .effect__clock-inside {
+    left: 22px;
+    top: 70px;
+    width: 253px;
+    height: 253px;
+    border: 17px solid $color-pink;
+    font-size: 120px;
+    line-height: 206px;
+  }
 
-    &__content {
-      align-items: stretch;
-    }
+  .effect__content {
+    align-items: stretch;
+  }
 
-    &__description {
-      margin-top: 91px;
-      width: 535px;
-    }
+  .effect__description {
+    margin-top: 91px;
+    width: 535px;
+  }
 
-    &__title {
-      margin-bottom: 21px;
-      width: 100%;
-    }
+  .effect__title {
+    margin-bottom: 21px;
+    width: 100%;
+  }
 
-    &__title br {
-      display: none;
-    }
+  .effect__title br {
+    display: none;
+  }
 
-    &__text {
-      margin-bottom: 31px;
-      font-size: 18px;
-      line-height: 30px;
-    }
+  .effect__text {
+    margin-bottom: 31px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 
-    &__link {
-      font-size: 18px;
-      line-height: 30px;
-    }
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

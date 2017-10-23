@@ -1,140 +1,135 @@
-.editor {
-  &__tools {
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 23px;
-    padding-left: 35px;
-    padding-right: 45px;
-    justify-content: space-between;
-    // outline: 1px solid;
-  }
+.editor__tools {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 23px;
+  padding-left: 35px;
+  padding-right: 45px;
+  justify-content: space-between;
+}
 
-  &__tool {
-    display: block;
-    padding: 0;
-    width: 44px;
-    height: 50px;
-    font-size: 0;
-    border: none;
-    color: $color-pink;
-    background: transparent;
-    cursor: pointer;
-  }
+.editor__tool {
+  display: block;
+  padding: 0;
+  width: 44px;
+  height: 50px;
+  font-size: 0;
+  border: none;
+  color: $color-pink;
+  background: transparent;
+  cursor: pointer;
+}
 
-  &__tool-icon {
-    fill: $color-darkergray;
-  }
+.editor__tool-icon {
+  fill: $color-darkergray;
+}
 
-  &__tool-icon:hover {
-    fill: $color-darkestgray;
-  }
+.editor__tool-icon:hover {
+  fill: $color-darkestgray;
+}
 
-  &__tool-icon--active {
-    fill: $color-pink;
-  }
+.editor__tool-icon--active {
+  fill: $color-pink;
+}
 
-  &__tool--crop {
-    width: 44px;
-  }
+.editor__tool--crop {
+  width: 44px;
+}
 
-  &__tool--fill {
-    width: 48px;
-  }
+.editor__tool--fill {
+  width: 48px;
+}
 
-  &__tool--contrast {
-    width: 36px;
-  }
+.editor__tool--contrast {
+  width: 36px;
+}
 
-  &__options {
-    width: 240px;
-    margin: 0 auto;
-  }
+.editor__options {
+  width: 240px;
+  margin: 0 auto;
+}
 
-  &__option--fill,
-  &__option--contrast {
-    display: none;
-  }
+.editor__option--fill,
+.editor__option--contrast {
+  display: none;
 }
 
 @media (min-width: $bp-tablet) {
   .editor {
     display: flex;
+  }
 
-    &__tools {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-      padding: 0;
-    }
+  .editor__tools {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
 
-    &__tool {
-      box-sizing: border-box;
-      width: 24px;
-      height: 73px;
-      margin-right: 0;
-      background-size: 24px 23px;
-      border-bottom: 1px solid $color-darkgray;
-    }
+  .editor__tool {
+    box-sizing: border-box;
+    width: 24px;
+    height: 73px;
+    margin-right: 0;
+    background-size: 24px 23px;
+    border-bottom: 1px solid $color-darkgray;
+  }
 
-    &__tool-icon {
-      width: 24px;
-      height: 24px;
-      fill: $color-pink;
-    }
+  .editor__tool-icon {
+    width: 24px;
+    height: 24px;
+    fill: $color-pink;
+  }
 
-    &__tool-icon--contrast {
-      width: 16px;
-      height: 16px;
-    }
+  .editor__tool-icon--contrast {
+    width: 16px;
+    height: 16px;
+  }
 
-    &__tool--contrast {
-      background-size: 16px;
-    }
+  .editor__tool--contrast {
+    background-size: 16px;
+  }
 
-    &__options {
-      margin: 0;
-    }
+  .editor__options {
+    margin: 0;
+  }
 
-    &__option {
-      box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      height: 73px;
-      padding-left: 31px;
-      padding-right: 6px;
-      border-bottom: 1px solid $color-darkgray;
-    }
+  .editor__option {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 73px;
+    padding-left: 31px;
+    padding-right: 6px;
+    border-bottom: 1px solid $color-darkgray;
+  }
 
-    &__option--flex,
-    &__option--contrast {
-      display: flex;
-    }
+  .editor__option--flex,
+  .editor__option--contrast {
+    display: flex;
   }
 }
 
 @media (min-width: $bp-desktop) {
-  .editor {
-    &__tool {
-      width: 49px;
-    }
+  .editor__tool {
+    width: 49px;
+  }
 
-    &__tool-icon {
-      width: 47px;
-      height: 50px;
-    }
+  .editor__tool-icon {
+    width: 47px;
+    height: 50px;
+  }
 
-    &__tool-icon--contrast {
-      width: 33px;
-      height: 33px;
-    }
+  .editor__tool-icon--contrast {
+    width: 33px;
+    height: 33px;
+  }
 
-    &__options {
-      width: 362px;
-    }
+  .editor__options {
+    width: 362px;
+  }
 
-    &__option {
-      padding-left: 42px;
-      padding-right: 31px;
-    }
+  .editor__option {
+    padding-left: 42px;
+    padding-right: 31px;
   }
 }
