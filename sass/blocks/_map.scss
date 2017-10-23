@@ -1,46 +1,44 @@
 .map {
   position: relative;
-  width: $bp-mobile;
+  width: 100%;
   height: 200px;
   margin: 0 auto;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    z-index: 100;
-    display: block;
-    width: 100%;
-    height: 37px;
-    background-image: url("../img/bg-triangle-white-footer.svg");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: -26px;
-  }
+.map::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  height: 37px;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -26px;
 }
 
 @media (min-width: $bp-tablet) {
   .map {
-    width: $bp-tablet;
     height: 377px;
+  }
 
-    &::before {
-      height: 85px;
-      background-size: cover;
-      background-position-y: -13px;
-    }
+  .map::before {
+    height: 85px;
+    background-size: cover;
+    background-position-y: -13px;
   }
 }
 
 @media (min-width: $bp-desktop) {
   .map {
-    width: $bp-desktop;
     margin: 0 auto;
     height: 477px;
+  }
 
-    &::before {
-      height: 125px;
-      background-position-y: -15px;
-    }
+  .map::before {
+    height: 125px;
+    background-position-y: -15px;
   }
 }

@@ -2,85 +2,72 @@
   position: relative;
   z-index: 10;
   background-color: rgba(#1d2631, 0.7);
+}
 
-  &--nav-opened {
-    background-color: $color-darkblue;
-  }
+.page-header--nav-opened {
+  background-color: $color-darkblue;
+}
 
-  &__nav {
-    // width: 700px;
-  }
+.page-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: $inner-mobile;
+  height: 66px;
+  margin: 0 auto;
+}
 
-  &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: $inner-mobile;
-    height: 66px;
-    margin: 0 auto;
-  }
+.page-header__icon {
+  fill: $color-white;
+}
 
-  &__icon {
-    fill: $color-white;
-  }
+.page-header__icon:hover {
+  fill: $color-pink;
+}
 
-  &__icon:hover {
-    fill: $color-pink;
-  }
+.page-header__icon:active {
+  fill: $color-white;
+  opacity: 0.3;
+}
 
-  &__icon:active {
-    fill: $color-white;
-    opacity: 0.3;
-  }
+.page-header__icon--tablet {
+  display: none;
+}
 
-  &__icon--tablet {
-    display: none;
-  }
-
-  &__icon--desktop {
-    display: none;
-  }
+.page-header__icon--desktop {
+  display: none;
 }
 
 @media (min-width: $bp-tablet) {
-  .page-header {
-    &__inner {
-      width: $inner-tablet;
-      height: 110px;
-    }
+  .page-header__inner {
+    width: $inner-tablet;
+    height: 110px;
+  }
 
-    &__logo {
-      margin-top: -17px;
-    }
+  .page-header__logo {
+    margin-top: -17px;
+  }
 
-    &__icon--mobile {
-      display: none;
-    }
+  .page-header__icon--mobile {
+    display: none;
+  }
 
-    &__icon--tablet {
-      display: block;
-      fill: $color-white;
-    }
+  .page-header__icon--tablet {
+    display: block;
+    fill: $color-white;
   }
 }
 
 @media (min-width: $bp-desktop) {
-  .page-header {
-    &__inner {
-      width: $inner-desktop;
-    }
+  .page-header__inner {
+    width: $inner-desktop;
+  }
 
-    // &__nav {
-    //   width: 700px;
-    //   height: 65px;
-    // }
+  .page-header__icon--tablet {
+    display: none;
+  }
 
-    &__icon--tablet {
-      display: none;
-    }
-
-    &__icon--desktop {
-      display: block;
-    }
+  .page-header__icon--desktop {
+    display: block;
   }
 }

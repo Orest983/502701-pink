@@ -79,11 +79,11 @@
           <div class="form__block-inner form__block-inner--person">
             <div class="form__group form__group--person">
               <label class="form__label form__label--person" for="surname">Фамилия:</label>
-              <input class="form__input" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию *">
+              <input class="form__input" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию *" required>
             </div>
             <div class="form__group form__group--person">
               <label class="form__label form__label--person" for="firstname">Имя:</label>
-              <input class="form__input" id="firstname" type="text" name="firstname" value="" placeholder="Введите ваше имя *">
+              <input class="form__input" id="firstname" type="text" name="firstname" value="" placeholder="Введите ваше имя *" required>
             </div>
             <div class="form__group form__group--person">
               <label class="form__label form__label--person" for="middlename">Отчество:</label>
@@ -131,7 +131,7 @@
               <div class="form__group form__group--contacts">
                 <label class="form__label form__label--contacts" for="phone">Номер телефона</label>
                 <div class="form__input-wrap">
-                  <input class="form__input form__input--contacts" id="phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста *">
+                  <input class="form__input form__input--contacts" id="phone" type="tel" name="phone" pattern="(\+?\d[- .]*){7,13}" value="" placeholder="Номер, пожалуйста *" required>
                   <span class="form__input-aside">
                     <svg class="form__input-icon form__input-icon--phone" width="20" height="19">
                       <use xlink:href="#icon-phone" />
@@ -142,7 +142,7 @@
               <div class="form__group form__group--contacts">
                 <label class="form__label form__label--contacts" for="email">Адрес почты</label>
                 <div class="form__input-wrap">
-                  <input class="form__input form__input--contacts" id="email" type="text" name="email" value="" placeholder="Введите почту">
+                  <input class="form__input form__input--contacts" id="email" type="email" name="email" value="" placeholder="Введите почту" required>
                   <span class="form__input-aside">
                     <svg class="form__input-icon form__input-icon--email" width="18" height="13">
                       <use xlink:href="#icon-mail" />

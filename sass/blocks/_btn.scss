@@ -12,50 +12,50 @@
   line-height: 49px;
   background: transparent;
   cursor: pointer;
+}
 
-  &--pink {
-    border: 3px solid $color-pink;
-    color: $color-pink;
-  }
+.btn--pink {
+  border: 3px solid $color-pink;
+  color: $color-pink;
+}
 
-  &--pink:hover {
-    background-color: $color-pink;
-    color: $color-white;
-  }
+.btn--pink:hover {
+  background-color: $color-pink;
+  color: $color-white;
+}
 
-  &--pink:active {
-    color: $color-lightpink;
-  }
+.btn--pink:active {
+  color: $color-lightpink;
+}
 
-  &--gray {
-    border: 3px solid $color-btn-gray-border;
-    color: $color-btn-gray-text;
-  }
+.btn--gray {
+  border: 3px solid $color-btn-gray-border;
+  color: $color-btn-gray-text;
+}
 
-  &--gray:hover {
-    border: 3px solid $color-btn-gray-border--hover;
-    color: $color-btn-gray-text--hover;
-  }
+.btn--gray:hover {
+  border: 3px solid $color-btn-gray-border--hover;
+  color: $color-btn-gray-text--hover;
+}
 
-  &--gray:active {
-    background-color: $color-btn-gray-bg--active;
-    color: $color-btn-gray-text--active;
-  }
+.btn--gray:active {
+  background-color: $color-btn-gray-bg--active;
+  color: $color-btn-gray-text--active;
+}
 
-  &--green {
-    background-color: $color-btn-green-bg;
-    color: $color-white;
-  }
+.btn--green {
+  background-color: $color-btn-green-bg;
+  color: $color-white;
+}
 
-  &--green:hover {
-    background-color: $color-btn-green-bg--hover;
-  }
+.btn--green:hover {
+  background-color: $color-btn-green-bg--hover;
+}
 
-  &--green:active {
-    color: $color-btn-green-text--active;
-  }
+.btn--green:active {
+  color: $color-btn-green-text--active;
+}
 
-  &--green:disabled {
-    background-color: $color-btn-green-bg--disabled;
-  }
+.btn--green:disabled {
+  background-color: $color-btn-green-bg--disabled;
 }

@@ -1,94 +1,90 @@
 .slider {
   position: relative;
+}
 
-  &__controls {
-    display: none;
-  }
+.slider__controls {
+  display: none;
+}
 
-  &__toggles {
-    text-align: center;
-  }
+.slider__toggles {
+  text-align: center;
+}
 
-  &__toggle {
-    box-sizing: border-box;
-    width: 12px;
-    height: 12px;
-    padding: 0;
-    margin: 0 5px;
-    border-radius: 50%;
-    border: 3px solid $color-white;
-    background-color: $color-darkgray;
-    text-indent: -50px;
-    overflow: hidden;
-    cursor: pointer;
-  }
+.slider__toggle {
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 3px solid $color-white;
+  background-color: $color-darkgray;
+  text-indent: -50px;
+  overflow: hidden;
+  cursor: pointer;
+}
 
-  &__toggle:hover {
-    background-color: $color-darkergray;
-    border: 3px solid $color-white;
-  }
+.slider__toggle:hover {
+  background-color: $color-darkergray;
+  border: 3px solid $color-white;
+}
 
-  &__toggle:active {
-    background-color: $color-lightgray;
-    border: 3px solid $color-white;
-  }
+.slider__toggle:active {
+  background-color: $color-lightgray;
+  border: 3px solid $color-white;
+}
 
-  &__toggle--lightgrey {
-    border: 3px solid $color-lightgray;
-  }
+.slider__toggle--lightgrey {
+  border: 3px solid $color-lightgray;
+}
 
-  &__toggle--active {
-    border: 3px solid $color-darkblue;
-    background: $color-white;
-  }
+.slider__toggle--active {
+  border: 3px solid $color-darkblue;
+  background: $color-white;
 }
 
 @media (min-width: $bp-tablet) {
-  .slider {
-    &__toggle {
-      margin: 0 4px;
-    }
+  .slider__toggle {
+    margin: 0 4px;
   }
 }
 
 @media (min-width: $bp-desktop) {
-  .slider {
-    &__toggle {
-      display: none;
-    }
+  .slider__toggle {
+    display: none;
+  }
 
-    &__controls {
-      display: block;
-    }
+  .slider__controls {
+    display: block;
+  }
 
-    &__control {
-      position: absolute;
-      top: 14%;
-      width: 30px;
-      height: 42px;
-      border: none;
-      background: none;
-      cursor: pointer;
-    }
+  .slider__control {
+    position: absolute;
+    top: 14%;
+    width: 30px;
+    height: 42px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
 
-    &__control--prev {
-      left: 0;
-    }
+  .slider__control--prev {
+    left: 0;
+  }
 
-    &__control--next {
-      right: 0;
-    }
+  .slider__control--next {
+    right: 0;
+  }
 
-    &__control-icon {
-      fill: $color-darkgray;
-    }
+  .slider__control-icon {
+    fill: $color-darkgray;
+  }
 
-    &__control-icon:hover {
-      fill: $color-darkergray;
-    }
+  .slider__control-icon:hover {
+    fill: $color-darkergray;
+  }
 
-    &__control-icon:active {
-      fill: $color-lightgray;
-    }
+  .slider__control-icon:active {
+    fill: $color-lightgray;
   }
 }

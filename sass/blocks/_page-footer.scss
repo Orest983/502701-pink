@@ -1,69 +1,67 @@
 .page-footer {
   padding-top: 37px;
   padding-bottom: 37px;
+}
 
-  &--xs-hidden {
-    display: none;
-  }
+.page-footer--xs-hidden {
+  display: none;
+}
 
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: $inner-mobile;
-    margin: 0 auto;
-  }
+.page-footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: $inner-mobile;
+  margin: 0 auto;
+}
 
-  &__logo {
-    display: block;
-    height: 41px;
-    margin-bottom: 40px;
-  }
+.page-footer__logo {
+  display: block;
+  height: 41px;
+  margin-bottom: 40px;
+}
 
-  &__social {
-    margin-bottom: 35px;
-  }
+.page-footer__social {
+  margin-bottom: 35px;
+}
 
-  &__icon {
-    fill: $color-darkblue;
-  }
+.page-footer__icon {
+  fill: $color-darkblue;
+}
 
-  &__icon:hover {
-    fill: $color-pink;
-  }
+.page-footer__icon:hover {
+  fill: $color-pink;
+}
 
-  &__icon:active {
-    fill: $color-darkblue;
-    opacity: 0.3;
-  }
+.page-footer__icon:active {
+  fill: $color-darkblue;
+  opacity: 0.3;
+}
 
-  &__icon--desktop {
-    display: none;
-  }
+.page-footer__icon--desktop {
+  display: none;
 }
 
 @media (min-width: $bp-tablet) {
-  .page-footer {
-    &--xs-hidden {
-      display: block;
-    }
+  .page-footer--xs-hidden {
+    display: block;
+  }
 
-    &__inner {
-      flex-direction: row;
-      justify-content: space-between;
-      width: $inner-tablet;
-    }
+  .page-footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    width: $inner-tablet;
+  }
 
-    &__logo {
-      width: 150px;
-      margin-top: -16px;
-      margin-bottom: 0;
-    }
+  .page-footer__logo {
+    width: 150px;
+    margin-top: -16px;
+    margin-bottom: 0;
+  }
 
-    &__social {
-      margin-bottom: 0;
-      margin-left: -21px;
-    }
+  .page-footer__social {
+    margin-bottom: 0;
+    margin-left: -21px;
   }
 }
 
@@ -71,22 +69,22 @@
   .page-footer {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
 
-    &__inner {
-      width: $inner-desktop;
-    }
+  .page-footer__inner {
+    width: $inner-desktop;
+  }
 
-    &__social {
-      margin-bottom: 0;
-      margin-left: 0;
-    }
+  .page-footer__social {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 
-    &__icon--mobile {
-      display: none;
-    }
+  .page-footer__icon--mobile {
+    display: none;
+  }
 
-    &__icon--desktop {
-      display: block;
-    }
+  .page-footer__icon--desktop {
+    display: block;
   }
 }
